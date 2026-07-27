@@ -1,0 +1,23 @@
+{
+  "status": "success",
+  "temperature_c": 29.6,
+  "precipitation_mm": 0.0,
+  "humidity_pct": 90,
+  "wind_speed_kmh": 0.8,
+  "source": "open_meteo_api",
+  "flood": {
+    "status": "success",
+    "river_discharge_m3s": [
+      8.46,
+      8.82,
+      10.94,
+      11.68,
+      14.24
+    ],
+    "max_discharge_m3s": 14.24,
+    "average_discharge_m3s": 10.83,
+    "flood_probability": 0.1,
+    "flood_severity_score": 0.0,
+    "source": "glofas_flood_api"
+  }
+}
