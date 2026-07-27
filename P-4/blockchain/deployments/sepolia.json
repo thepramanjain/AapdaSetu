@@ -1,0 +1,8 @@
+{
+  "network": "sepolia",
+  "chainId": 11155111,
+  "contractName": "AapdaSetu",
+  "contractAddress": "0xF84b71d0395139705E535651dddB2bbdD93a904C",
+  "deployer": "0xdfdC11b3816a221EDeeE8D3E9e531779F9f7aBDC",
+  "deployedAt": "2026-07-17T14:21:34.391Z"
+}

@@ -1,0 +1,53 @@
+version: "3.8"
+
+services:
+  # Relational Database service (PostgreSQL)
+  db:
+    image: postgres:15-alpine
+    container_name: aapdasetu_db
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: aapdasetu
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - aapdasetu_network
+
+  # FastAPI Web Application service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: aapdasetu_api
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount application folder for hot-reloading during local development
+      - .:/app
+      # Exclude local virtual environment from overriding container dependencies
+      - /app/.venv
+      # Mount local logs directory to view running logs on host
+      - ./logs:/app/logs
+    environment:
+      - ENV=dev
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/aapdasetu
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - aapdasetu_network
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  aapdasetu_network:
+    driver: bridge

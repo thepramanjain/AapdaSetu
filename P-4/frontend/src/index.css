@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-emerald-100 text-emerald-900;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+  }
+}
+
+@layer components {
+
+  /* ── Card System ── */
+  .glass {
+    @apply bg-white border border-slate-200 rounded-2xl shadow-sm;
+  }
+
+  .glass-strong {
+    @apply bg-white border border-slate-200 rounded-2xl shadow-lg;
+  }
+
+  /* ── Button System ── */
+  .grad-brand {
+    @apply bg-gradient-to-r from-emerald-700 to-emerald-500;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-emerald-700 to-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-200;
+    @apply hover:from-emerald-800 hover:to-emerald-600 hover:shadow-md;
+    @apply active:scale-[0.98];
+    @apply disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-white border border-slate-200 px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition-all duration-200;
+    @apply hover:bg-slate-50 hover:border-slate-300 hover:shadow-md;
+    @apply active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-transparent border border-slate-200 px-5 py-2.5 text-sm font-medium text-slate-600 transition-all duration-200;
+    @apply hover:bg-slate-100 hover:border-slate-300;
+    @apply active:scale-[0.98];
+  }
+
+  /* ── Text Styles ── */
+  .text-grad {
+    @apply text-slate-900;
+  }
+
+  /* ── Input System ── */
+  .glass-input {
+    @apply w-full rounded-xl bg-white border border-slate-200 px-4 py-2.5 text-sm text-slate-700 placeholder-slate-400 shadow-sm transition-all duration-200;
+    @apply focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-400;
+  }
+
+  /* ── Grid Backgrounds ── */
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, rgba(148, 163, 184, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(148, 163, 184, 0.08) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+}
+
+/* React Flow custom panel styling */
+.react-flow__renderer {
+  background: radial-gradient(circle, #e2e8f0 1px, transparent 1px) !important;
+  background-size: 20px 20px !important;
+}
+
+.react-flow__handle {
+  width: 8px !important;
+  height: 8px !important;
+  background: #10b981 !important;
+  border: 1px solid #ffffff !important;
+}
+
+.react-flow__edge-path {
+  stroke-dasharray: 5;
+  animation: dash 10s linear infinite;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
