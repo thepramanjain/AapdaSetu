@@ -1,0 +1,3799 @@
+{
+  "hospitals": [
+    {
+      "id": "OSM_HOSP_7049880700",
+      "name": "Shraddha Eye Hospital",
+      "latitude": 20.0102174,
+      "longitude": 73.7932442,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.33
+    },
+    {
+      "id": "OSM_HOSP_7070668451",
+      "name": "Sukhakarta Rugnalaya",
+      "latitude": 20.0118007,
+      "longitude": 73.7946745,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.47
+    },
+    {
+      "id": "OSM_HOSP_7054918904",
+      "name": "Ramalayam Hospital",
+      "latitude": 20.010797,
+      "longitude": 73.7948723,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.49
+    },
+    {
+      "id": "OSM_HOSP_7049050295",
+      "name": "Supe Heart & Diabetics Hospital and Research C",
+      "latitude": 20.0082351,
+      "longitude": 73.7866621,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.5
+    },
+    {
+      "id": "OSM_HOSP_7049188650",
+      "name": "Chaitanya Nursing Home",
+      "latitude": 20.0089175,
+      "longitude": 73.7857367,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.54
+    },
+    {
+      "id": "OSM_HOSP_1471585114",
+      "name": "NSKMC Indira Gandhi Hospital",
+      "latitude": 20.0098866,
+      "longitude": 73.7954871,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.57
+    },
+    {
+      "id": "OSM_HOSP_7054427560",
+      "name": "Seeta Maternity and Surgical Nursing Home",
+      "latitude": 20.0081381,
+      "longitude": 73.7853042,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.62
+    },
+    {
+      "id": "OSM_HOSP_7063805493",
+      "name": "Surya Multispeciality Hospitals Pvt. Ltd.",
+      "latitude": 20.0109886,
+      "longitude": 73.7962657,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.63
+    },
+    {
+      "id": "OSM_HOSP_7655439104",
+      "name": "Leelavati Hospital & Research Centre",
+      "latitude": 20.0109153,
+      "longitude": 73.7964361,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.65
+    },
+    {
+      "id": "OSM_HOSP_7655439064",
+      "name": "Sahara Hospital",
+      "latitude": 20.014527,
+      "longitude": 73.795949,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.7
+    },
+    {
+      "id": "OSM_HOSP_7050280708",
+      "name": "Sanjeevani Criticare and Research Centre Pvt Ltd",
+      "latitude": 20.014716,
+      "longitude": 73.7966748,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.78
+    },
+    {
+      "id": "OSM_HOSP_7655439051",
+      "name": "Chopda Hospital",
+      "latitude": 20.0150416,
+      "longitude": 73.7970225,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.83
+    },
+    {
+      "id": "OSM_HOSP_7063077072",
+      "name": "Ayush Hospital",
+      "latitude": 20.0057917,
+      "longitude": 73.7846504,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 0.84
+    },
+    {
+      "id": "OSM_HOSP_325219308",
+      "name": "Rajebahadur Hospital and Research Centre Pvt. Ltd.",
+      "latitude": 20.0027511,
+      "longitude": 73.7870237,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.0
+    },
+    {
+      "id": "OSM_HOSP_7655439024",
+      "name": "Nasim Hospital",
+      "latitude": 19.9998084,
+      "longitude": 73.7895939,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.27
+    },
+    {
+      "id": "OSM_HOSP_229989310",
+      "name": "Sadguru Hospital",
+      "latitude": 20.0093093,
+      "longitude": 73.802849,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.34
+    },
+    {
+      "id": "OSM_HOSP_7048928936",
+      "name": "Shree Saibaba Heart Insititue and Research Center Pvt. Ltd.",
+      "latitude": 19.9999141,
+      "longitude": 73.7841488,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.41
+    },
+    {
+      "id": "OSM_HOSP_7080205252",
+      "name": "Siddhi Vinayak Hospital, Nashik",
+      "latitude": 20.0055926,
+      "longitude": 73.7780187,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.42
+    },
+    {
+      "id": "OSM_HOSP_7655439046",
+      "name": "Deogaonkar Hospital",
+      "latitude": 20.005054,
+      "longitude": 73.7778621,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.46
+    },
+    {
+      "id": "OSM_HOSP_7045252536",
+      "name": "Dr A.K.Pawar Institute of Obstetrics, Gynecology and Reproductive Medicine",
+      "latitude": 19.9996923,
+      "longitude": 73.7833911,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.47
+    },
+    {
+      "id": "OSM_HOSP_7050321638",
+      "name": "Sparsh Hospital",
+      "latitude": 20.0055292,
+      "longitude": 73.7772522,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.5
+    },
+    {
+      "id": "OSM_HOSP_3996732528",
+      "name": "Dr Bapaye Hospital",
+      "latitude": 19.9990223,
+      "longitude": 73.7826899,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.57
+    },
+    {
+      "id": "OSM_HOSP_1671916246",
+      "name": "MGV's KBH Dental College &  Hospital",
+      "latitude": 20.0043475,
+      "longitude": 73.8037255,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.6
+    },
+    {
+      "id": "OSM_HOSP_7050624423",
+      "name": "Dr. Upasani Maternity and Nursing Home",
+      "latitude": 20.0123987,
+      "longitude": 73.8055301,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.6
+    },
+    {
+      "id": "OSM_HOSP_229989763",
+      "name": "General Hospital (OSM 229989763)",
+      "latitude": 20.0043299,
+      "longitude": 73.8037144,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.6
+    },
+    {
+      "id": "OSM_HOSP_7655439097",
+      "name": "Apex Wellness Rishikesh Hospital",
+      "latitude": 20.0058578,
+      "longitude": 73.7757959,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.62
+    },
+    {
+      "id": "OSM_HOSP_7655439083",
+      "name": "Sai Seva Superspeciality Hospital",
+      "latitude": 20.0098222,
+      "longitude": 73.8058064,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.63
+    },
+    {
+      "id": "OSM_HOSP_7655439041",
+      "name": "Ahirrao Hospital",
+      "latitude": 20.0098307,
+      "longitude": 73.8059734,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.65
+    },
+    {
+      "id": "OSM_HOSP_7655439047",
+      "name": "Geetha Children's Hospital",
+      "latitude": 20.0049837,
+      "longitude": 73.7759148,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.65
+    },
+    {
+      "id": "OSM_HOSP_7049054304",
+      "name": "Birla Super Speciality Eye Hospital and Lasik Centre",
+      "latitude": 19.9978876,
+      "longitude": 73.7832248,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.66
+    },
+    {
+      "id": "OSM_HOSP_7085383682",
+      "name": "Micky Mouse Child Clinic and Hospital",
+      "latitude": 20.0059593,
+      "longitude": 73.775268,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.67
+    },
+    {
+      "id": "OSM_HOSP_7655439020",
+      "name": "Super Specialist Hospital",
+      "latitude": 20.009976,
+      "longitude": 73.806428,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.7
+    },
+    {
+      "id": "OSM_HOSP_7044356003",
+      "name": "Prasanna Balrugnalay and Research Centre",
+      "latitude": 20.0038107,
+      "longitude": 73.7755135,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.75
+    },
+    {
+      "id": "OSM_HOSP_7063909914",
+      "name": "Shivam Eye Care Center",
+      "latitude": 20.0071079,
+      "longitude": 73.7738478,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.77
+    },
+    {
+      "id": "OSM_HOSP_7047924965",
+      "name": "Sunrise Hospital, Nashik",
+      "latitude": 20.0004043,
+      "longitude": 73.7776136,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.79
+    },
+    {
+      "id": "OSM_HOSP_7070710004",
+      "name": "Ahura Maternity Hospital",
+      "latitude": 19.9961371,
+      "longitude": 73.7841891,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.8
+    },
+    {
+      "id": "OSM_HOSP_7045823769",
+      "name": "Sushrut Hospital, Nashik",
+      "latitude": 20.0027823,
+      "longitude": 73.7752707,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.83
+    },
+    {
+      "id": "OSM_HOSP_7053177461",
+      "name": "Deepjyoti Hospital",
+      "latitude": 20.0018302,
+      "longitude": 73.7758709,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.83
+    },
+    {
+      "id": "OSM_HOSP_7655439018",
+      "name": "Safafalya Hospital",
+      "latitude": 20.0037033,
+      "longitude": 73.7745358,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.84
+    },
+    {
+      "id": "OSM_HOSP_7048504195",
+      "name": "Sai Hospital ( Saphalya Pvt. Ltd.,)",
+      "latitude": 20.0016885,
+      "longitude": 73.7758031,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.85
+    },
+    {
+      "id": "OSM_HOSP_1466557399",
+      "name": "Soham Hospital and Medical Foundation Pvt. Ltd.",
+      "latitude": 20.000611,
+      "longitude": 73.7763919,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.87
+    },
+    {
+      "id": "OSM_HOSP_7079665758",
+      "name": "Vimal Maternity and General Hosp",
+      "latitude": 19.9967232,
+      "longitude": 73.7803482,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.92
+    },
+    {
+      "id": "OSM_HOSP_7655439030",
+      "name": "Dhadiwal Hospital",
+      "latitude": 19.9965967,
+      "longitude": 73.7800892,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.94
+    },
+    {
+      "id": "OSM_HOSP_1466151433",
+      "name": "Dr Zakir Hussain Hospital",
+      "latitude": 19.9959771,
+      "longitude": 73.7992962,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.94
+    },
+    {
+      "id": "OSM_HOSP_7066505732",
+      "name": "Shreeji Hospital, Nashik",
+      "latitude": 19.9964383,
+      "longitude": 73.7799472,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.97
+    },
+    {
+      "id": "OSM_HOSP_1466572188",
+      "name": "Suryodaya Hospital",
+      "latitude": 19.9937136,
+      "longitude": 73.7936211,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 1.98
+    },
+    {
+      "id": "OSM_HOSP_1466555423",
+      "name": "Civil Hospital, Nashik",
+      "latitude": 19.997323,
+      "longitude": 73.7780886,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.0
+    },
+    {
+      "id": "OSM_HOSP_7048425359",
+      "name": "Sukhamte Maternity Home",
+      "latitude": 20.0130312,
+      "longitude": 73.7711117,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.01
+    },
+    {
+      "id": "OSM_HOSP_7083324284",
+      "name": "Dhanvantari Hospital",
+      "latitude": 19.9984566,
+      "longitude": 73.7767024,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.01
+    },
+    {
+      "id": "OSM_HOSP_7655439012",
+      "name": "Spandan Hospital",
+      "latitude": 19.998867,
+      "longitude": 73.7761976,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.01
+    },
+    {
+      "id": "OSM_HOSP_4849889623",
+      "name": "General Hospital (OSM 4849889623)",
+      "latitude": 19.9962269,
+      "longitude": 73.7791902,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.03
+    },
+    {
+      "id": "OSM_HOSP_7043617930",
+      "name": "Lele Hospital and Research Center Pvt Ltd",
+      "latitude": 20.0009172,
+      "longitude": 73.7724497,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.18
+    },
+    {
+      "id": "OSM_HOSP_7655439074",
+      "name": "Chaitanya Hospital & Research Centre Private limited",
+      "latitude": 20.0025596,
+      "longitude": 73.7714078,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.19
+    },
+    {
+      "id": "OSM_HOSP_7655439094",
+      "name": "Mehta Hospital",
+      "latitude": 20.0003009,
+      "longitude": 73.7728538,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.19
+    },
+    {
+      "id": "OSM_HOSP_1466572181",
+      "name": "Wockhardt Hospitals",
+      "latitude": 19.9915573,
+      "longitude": 73.7904426,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.19
+    },
+    {
+      "id": "OSM_HOSP_7053517503",
+      "name": "Rudra Hospital and Critical Care Centre",
+      "latitude": 20.0026242,
+      "longitude": 73.7711522,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.21
+    },
+    {
+      "id": "OSM_HOSP_7073944672",
+      "name": "Panchavati Hospital and Research Centre",
+      "latitude": 20.0022694,
+      "longitude": 73.7713855,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.21
+    },
+    {
+      "id": "OSM_HOSP_7048172476",
+      "name": "Sudarshan Hospital",
+      "latitude": 19.9921727,
+      "longitude": 73.7835663,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.23
+    },
+    {
+      "id": "OSM_HOSP_7655439096",
+      "name": "Yash Hospital",
+      "latitude": 19.995506,
+      "longitude": 73.803426,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.23
+    },
+    {
+      "id": "OSM_HOSP_7655439033",
+      "name": "Supreme Maternity Hospital and Laproscopy Centre",
+      "latitude": 20.0063819,
+      "longitude": 73.7690497,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.28
+    },
+    {
+      "id": "OSM_HOSP_1466572195",
+      "name": "Metro Hospital",
+      "latitude": 19.9910507,
+      "longitude": 73.7937874,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.28
+    },
+    {
+      "id": "OSM_HOSP_7043017175",
+      "name": "Chopda Medicare & Research Centre Pvt. Ltd\u2019s - Magnum Heart Institute",
+      "latitude": 20.006418,
+      "longitude": 73.7689488,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.29
+    },
+    {
+      "id": "OSM_HOSP_7054258883",
+      "name": "Jai Hospital Pvt Ltd",
+      "latitude": 19.9973243,
+      "longitude": 73.7740885,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.29
+    },
+    {
+      "id": "OSM_HOSP_1466135595",
+      "name": "Sudarshan Hospital",
+      "latitude": 19.9920753,
+      "longitude": 73.7822914,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.29
+    },
+    {
+      "id": "OSM_HOSP_7655439067",
+      "name": "Shraddha Hospital And Maternity Home",
+      "latitude": 20.0030284,
+      "longitude": 73.7697917,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.32
+    },
+    {
+      "id": "OSM_HOSP_7073949820",
+      "name": "New National Hospital",
+      "latitude": 19.9906108,
+      "longitude": 73.7942138,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.33
+    },
+    {
+      "id": "OSM_HOSP_7655439048",
+      "name": "More Hospital",
+      "latitude": 19.995133,
+      "longitude": 73.804476,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.33
+    },
+    {
+      "id": "OSM_HOSP_7655439081",
+      "name": "Kilbil Children Hospital",
+      "latitude": 19.991184,
+      "longitude": 73.783488,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.34
+    },
+    {
+      "id": "OSM_HOSP_7655439095",
+      "name": "Little Angels Child Clinic",
+      "latitude": 20.0031065,
+      "longitude": 73.7695214,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.35
+    },
+    {
+      "id": "OSM_HOSP_7063808914",
+      "name": "Vidya Vikas Hospital",
+      "latitude": 20.0111297,
+      "longitude": 73.7672261,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.4
+    },
+    {
+      "id": "OSM_HOSP_7655439027",
+      "name": "Vimal Hospital",
+      "latitude": 19.9906431,
+      "longitude": 73.7833378,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.4
+    },
+    {
+      "id": "OSM_HOSP_7655439069",
+      "name": "Rainbow Hospital",
+      "latitude": 19.991668,
+      "longitude": 73.780092,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.42
+    },
+    {
+      "id": "OSM_HOSP_7051167330",
+      "name": "Shinge Superspeciality Hospital",
+      "latitude": 19.9984105,
+      "longitude": 73.7711187,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.46
+    },
+    {
+      "id": "OSM_HOSP_7051342871",
+      "name": "Kute Eye Hospital",
+      "latitude": 19.9917136,
+      "longitude": 73.7790366,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.47
+    },
+    {
+      "id": "OSM_HOSP_7655439032",
+      "name": "Vedant Hospital",
+      "latitude": 19.991552,
+      "longitude": 73.779366,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.47
+    },
+    {
+      "id": "OSM_HOSP_1466572199",
+      "name": "Sahyadri Speciality Hospital",
+      "latitude": 19.9892736,
+      "longitude": 73.7934816,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.47
+    },
+    {
+      "id": "OSM_HOSP_7655439036",
+      "name": "Shraddha Piles Hospital",
+      "latitude": 19.9907761,
+      "longitude": 73.7996295,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.48
+    },
+    {
+      "id": "OSM_HOSP_7075571881",
+      "name": "Curie Manavata Cancer Centre",
+      "latitude": 19.9897261,
+      "longitude": 73.7831658,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.5
+    },
+    {
+      "id": "OSM_HOSP_7655439040",
+      "name": "Sopan Hospital & Neurology Institute",
+      "latitude": 19.9913482,
+      "longitude": 73.7790415,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.5
+    },
+    {
+      "id": "OSM_HOSP_1466510468",
+      "name": "Namco Hospital",
+      "latitude": 20.0336366,
+      "longitude": 73.7936291,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.51
+    },
+    {
+      "id": "OSM_HOSP_7048874945",
+      "name": "Nasik Health Care and Research Centre Pvt.Ltd",
+      "latitude": 19.9884752,
+      "longitude": 73.7899759,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.53
+    },
+    {
+      "id": "OSM_HOSP_7041055349",
+      "name": "Dr. Suryawanshi Eye Hospital",
+      "latitude": 19.9908377,
+      "longitude": 73.779341,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.54
+    },
+    {
+      "id": "OSM_HOSP_7655439029",
+      "name": "Sonawane Heart Care Hospital",
+      "latitude": 19.9913697,
+      "longitude": 73.7782432,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.54
+    },
+    {
+      "id": "OSM_HOSP_7655439077",
+      "name": "Wellcare Hospital",
+      "latitude": 19.9913382,
+      "longitude": 73.778253,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.54
+    },
+    {
+      "id": "OSM_HOSP_7073909325",
+      "name": "Vijan Cardiac and Criticare Centre",
+      "latitude": 20.0052277,
+      "longitude": 73.7666662,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.55
+    },
+    {
+      "id": "OSM_HOSP_7054657060",
+      "name": "Trupti Hospital, Nashik",
+      "latitude": 19.9905617,
+      "longitude": 73.7791546,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.58
+    },
+    {
+      "id": "OSM_HOSP_7655439091",
+      "name": "Malpani Maternity Hospital",
+      "latitude": 20.0041732,
+      "longitude": 73.7667513,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.58
+    },
+    {
+      "id": "OSM_HOSP_7042991453",
+      "name": "Arihant Hospital, Nashik",
+      "latitude": 19.9885866,
+      "longitude": 73.7846356,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.59
+    },
+    {
+      "id": "OSM_HOSP_13808008528",
+      "name": "Healing Hands Clinic - Nashik",
+      "latitude": 20.0050726,
+      "longitude": 73.7662155,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.6
+    },
+    {
+      "id": "OSM_HOSP_7059172359",
+      "name": "Sanskriti Multi Speciality Hospital",
+      "latitude": 19.9878041,
+      "longitude": 73.7899652,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.61
+    },
+    {
+      "id": "OSM_HOSP_7655439026",
+      "name": "Naik Hospital",
+      "latitude": 19.989747,
+      "longitude": 73.800939,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.64
+    },
+    {
+      "id": "OSM_HOSP_1466082839",
+      "name": "Shatabdi Super Speciality Hospital",
+      "latitude": 19.9882049,
+      "longitude": 73.7840523,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.64
+    },
+    {
+      "id": "OSM_HOSP_7070136219",
+      "name": "Torne Ent Hospital",
+      "latitude": 19.9895837,
+      "longitude": 73.7797118,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.65
+    },
+    {
+      "id": "OSM_HOSP_7649608308",
+      "name": "Sharda Hospital",
+      "latitude": 20.0345512,
+      "longitude": 73.7953286,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.65
+    },
+    {
+      "id": "OSM_HOSP_7655439045",
+      "name": "Ramole Eye Hospital",
+      "latitude": 19.9994333,
+      "longitude": 73.768236,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.65
+    },
+    {
+      "id": "OSM_HOSP_7655439080",
+      "name": "Fortune Multispeciality Hospital and Research Centre",
+      "latitude": 19.987582,
+      "longitude": 73.785933,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.67
+    },
+    {
+      "id": "OSM_HOSP_7067133433",
+      "name": "Bhaskar Ent Hospital",
+      "latitude": 19.9890228,
+      "longitude": 73.780041,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.69
+    },
+    {
+      "id": "OSM_HOSP_1471883313",
+      "name": "Apollo Hospitals",
+      "latitude": 20.0120622,
+      "longitude": 73.8160926,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.7
+    },
+    {
+      "id": "OSM_HOSP_7053343857",
+      "name": "Suyash Hospital",
+      "latitude": 19.9890052,
+      "longitude": 73.7797084,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.71
+    },
+    {
+      "id": "OSM_HOSP_7066505757",
+      "name": "Chiranjeev Hospital, Nashik",
+      "latitude": 19.9888741,
+      "longitude": 73.7800531,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.71
+    },
+    {
+      "id": "OSM_HOSP_7045750041",
+      "name": "Shreeya Hospital",
+      "latitude": 19.987973,
+      "longitude": 73.7822418,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.72
+    },
+    {
+      "id": "OSM_HOSP_7048498760",
+      "name": "Dr Ganorkar Hospital",
+      "latitude": 19.9880209,
+      "longitude": 73.7818341,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.73
+    },
+    {
+      "id": "OSM_HOSP_7067540925",
+      "name": "Dr Lads Navjeevan Hospital Pvt Ltd",
+      "latitude": 19.9888577,
+      "longitude": 73.7794456,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.73
+    },
+    {
+      "id": "OSM_HOSP_7655439075",
+      "name": "Suman Symphony Hospital",
+      "latitude": 20.0054694,
+      "longitude": 73.7647239,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.74
+    },
+    {
+      "id": "OSM_HOSP_7044490657",
+      "name": "Vasan Eye Care Hospital, Nasik",
+      "latitude": 19.9869925,
+      "longitude": 73.7852164,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.75
+    },
+    {
+      "id": "OSM_HOSP_7655439023",
+      "name": "Optimus Hospital",
+      "latitude": 19.990491,
+      "longitude": 73.7757129,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.76
+    },
+    {
+      "id": "OSM_HOSP_7655439089",
+      "name": "NIMS Hospital",
+      "latitude": 20.0097601,
+      "longitude": 73.7637039,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.78
+    },
+    {
+      "id": "OSM_HOSP_7655439106",
+      "name": "Nivedita Maternity Home",
+      "latitude": 20.0040129,
+      "longitude": 73.7647602,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.78
+    },
+    {
+      "id": "OSM_HOSP_7082623473",
+      "name": "Vishwesh Childrens Hospital",
+      "latitude": 19.9881343,
+      "longitude": 73.7790459,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.82
+    },
+    {
+      "id": "OSM_HOSP_7655439099",
+      "name": "Dr. Kadale Baba Hospital",
+      "latitude": 19.9935639,
+      "longitude": 73.8096141,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.82
+    },
+    {
+      "id": "OSM_HOSP_7655439015",
+      "name": "Gawale Maternity Hospital",
+      "latitude": 20.0119992,
+      "longitude": 73.7630317,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.84
+    },
+    {
+      "id": "OSM_HOSP_7655439042",
+      "name": "Mayara Maternity Hospital",
+      "latitude": 19.9881764,
+      "longitude": 73.7786861,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.84
+    },
+    {
+      "id": "OSM_HOSP_7655439055",
+      "name": "Manas Hospital",
+      "latitude": 19.9888813,
+      "longitude": 73.7770275,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.84
+    },
+    {
+      "id": "OSM_HOSP_7655439068",
+      "name": "Dr. Joshi Hospital",
+      "latitude": 20.0128514,
+      "longitude": 73.7630754,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.84
+    },
+    {
+      "id": "OSM_HOSP_7655439062",
+      "name": "Saru Hospital",
+      "latitude": 19.9881466,
+      "longitude": 73.7782077,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.86
+    },
+    {
+      "id": "OSM_HOSP_7655439102",
+      "name": "Prapti Women's Hospital",
+      "latitude": 19.9882727,
+      "longitude": 73.7778731,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.86
+    },
+    {
+      "id": "OSM_HOSP_7655439037",
+      "name": "Nelson Memorial Children's Hospital Private Limited",
+      "latitude": 19.9883366,
+      "longitude": 73.7775347,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.87
+    },
+    {
+      "id": "OSM_HOSP_574967037",
+      "name": "Tanmayee Hospital",
+      "latitude": 20.0328155,
+      "longitude": 73.8055568,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.88
+    },
+    {
+      "id": "OSM_HOSP_7052219779",
+      "name": "City Care Hospital and Research Centre Pvt. Ltd",
+      "latitude": 19.9875917,
+      "longitude": 73.8016657,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.89
+    },
+    {
+      "id": "OSM_HOSP_1466176698",
+      "name": "Tulasi Eye Hospital",
+      "latitude": 19.9863069,
+      "longitude": 73.7984718,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.9
+    },
+    {
+      "id": "OSM_HOSP_7655439086",
+      "name": "Kaushalya Hospital",
+      "latitude": 20.006876,
+      "longitude": 73.7627884,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.91
+    },
+    {
+      "id": "OSM_HOSP_7655439058",
+      "name": "Chetna Hospital",
+      "latitude": 19.9920722,
+      "longitude": 73.809342,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.92
+    },
+    {
+      "id": "OSM_HOSP_7649608317",
+      "name": "Sakhale Hospital",
+      "latitude": 20.0336219,
+      "longitude": 73.8051461,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.94
+    },
+    {
+      "id": "OSM_HOSP_7080205271",
+      "name": "Thakar Hospital",
+      "latitude": 19.9858682,
+      "longitude": 73.7818944,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.95
+    },
+    {
+      "id": "OSM_HOSP_7048040165",
+      "name": "Indorewala ENT Hospital",
+      "latitude": 19.9858163,
+      "longitude": 73.7818252,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 2.96
+    },
+    {
+      "id": "OSM_HOSP_7073765601",
+      "name": "Ashwini Accident Multi Speciality Hospital",
+      "latitude": 19.9870542,
+      "longitude": 73.7774782,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.0
+    },
+    {
+      "id": "OSM_HOSP_7649608350",
+      "name": "Leelavati Hospital",
+      "latitude": 20.037304,
+      "longitude": 73.7818026,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.03
+    },
+    {
+      "id": "OSM_HOSP_607737677",
+      "name": "Kasliwal Superspeciality Hospital",
+      "latitude": 20.0106962,
+      "longitude": 73.7612549,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.03
+    },
+    {
+      "id": "OSM_HOSP_7655439053",
+      "name": "Upadhye Hospital",
+      "latitude": 20.0118417,
+      "longitude": 73.7604501,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.11
+    },
+    {
+      "id": "OSM_HOSP_7649608354",
+      "name": "Lilavati Hospital",
+      "latitude": 20.0365177,
+      "longitude": 73.8032606,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.12
+    },
+    {
+      "id": "OSM_HOSP_7655439054",
+      "name": "Shri Krushna Maternity Hospital",
+      "latitude": 19.98369,
+      "longitude": 73.7987424,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.19
+    },
+    {
+      "id": "OSM_HOSP_7655439079",
+      "name": "Sankalecha Hospital",
+      "latitude": 19.9834961,
+      "longitude": 73.7809527,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.23
+    },
+    {
+      "id": "OSM_HOSP_7655439061",
+      "name": "Shri Hari Hospital",
+      "latitude": 19.9829152,
+      "longitude": 73.797526,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.24
+    },
+    {
+      "id": "OSM_HOSP_7655439092",
+      "name": "Gondhale Hospital ENT, Eye & Maternity Home",
+      "latitude": 19.984143,
+      "longitude": 73.801884,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.25
+    },
+    {
+      "id": "OSM_HOSP_7052774033",
+      "name": "Dr.Pimprikar Hspital",
+      "latitude": 19.9845008,
+      "longitude": 73.7766977,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.29
+    },
+    {
+      "id": "OSM_HOSP_4757644922",
+      "name": "General Hospital (OSM 4757644922)",
+      "latitude": 19.984407,
+      "longitude": 73.776653,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.3
+    },
+    {
+      "id": "OSM_HOSP_7063909897",
+      "name": "Karandikar Hospital and Research Centre",
+      "latitude": 19.984284,
+      "longitude": 73.7770866,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.3
+    },
+    {
+      "id": "OSM_HOSP_7054997465",
+      "name": "Susheel Eye Hospital and Brahma Laser Centre",
+      "latitude": 20.0071703,
+      "longitude": 73.7586652,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.33
+    },
+    {
+      "id": "OSM_HOSP_7655439076",
+      "name": "Baste Maternity Hospital",
+      "latitude": 20.007263,
+      "longitude": 73.7584626,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.35
+    },
+    {
+      "id": "OSM_HOSP_7655439073",
+      "name": "Navkar Hospital",
+      "latitude": 19.9825454,
+      "longitude": 73.7794441,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.38
+    },
+    {
+      "id": "OSM_HOSP_3053925695",
+      "name": "Nahush Eye Hospital",
+      "latitude": 19.9827112,
+      "longitude": 73.7776885,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.43
+    },
+    {
+      "id": "OSM_HOSP_7047817984",
+      "name": "Suvichar Hospital Pvt. Ltd",
+      "latitude": 19.9826909,
+      "longitude": 73.8026011,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.43
+    },
+    {
+      "id": "OSM_HOSP_7649608337",
+      "name": "Samarth Hospital",
+      "latitude": 20.0393386,
+      "longitude": 73.8041443,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.44
+    },
+    {
+      "id": "OSM_HOSP_3053925694",
+      "name": "Dr Aware Hospital",
+      "latitude": 19.9826086,
+      "longitude": 73.7774614,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.45
+    },
+    {
+      "id": "OSM_HOSP_7043015177",
+      "name": "Nerlikar Hospital and Research Centre",
+      "latitude": 20.0125455,
+      "longitude": 73.7562639,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.55
+    },
+    {
+      "id": "OSM_HOSP_7049154744",
+      "name": "Barde Maternity Hospital",
+      "latitude": 19.9802987,
+      "longitude": 73.7820715,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.55
+    },
+    {
+      "id": "OSM_HOSP_7079665751",
+      "name": "Janak Hospital, Nashik",
+      "latitude": 19.9817588,
+      "longitude": 73.7769464,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.56
+    },
+    {
+      "id": "OSM_HOSP_7655439039",
+      "name": "Aghor Hospital",
+      "latitude": 19.981183,
+      "longitude": 73.777323,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.61
+    },
+    {
+      "id": "OSM_HOSP_7649608312",
+      "name": "Nyuninad Metkar Maternity & Nursing Home",
+      "latitude": 20.0425526,
+      "longitude": 73.7788271,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.68
+    },
+    {
+      "id": "OSM_HOSP_7649608351",
+      "name": "Synergy Hospital & Research Centre",
+      "latitude": 20.041653,
+      "longitude": 73.804976,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.72
+    },
+    {
+      "id": "OSM_HOSP_7649608327",
+      "name": "Dr. Varsha Lahade Hospital",
+      "latitude": 20.041798,
+      "longitude": 73.805017,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.73
+    },
+    {
+      "id": "OSM_HOSP_7649608304",
+      "name": "J & J Accident Nursing Home",
+      "latitude": 20.041458,
+      "longitude": 73.805987,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.74
+    },
+    {
+      "id": "OSM_HOSP_7649608359",
+      "name": "Vaishali Hospital",
+      "latitude": 20.0110022,
+      "longitude": 73.8261197,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.75
+    },
+    {
+      "id": "OSM_HOSP_7649608360",
+      "name": "Anurag Children Hospital",
+      "latitude": 20.009716,
+      "longitude": 73.826325,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.77
+    },
+    {
+      "id": "OSM_HOSP_7649608314",
+      "name": "Rana Hospital",
+      "latitude": 20.0423414,
+      "longitude": 73.8050454,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.79
+    },
+    {
+      "id": "OSM_HOSP_7649608323",
+      "name": "Six Sigma Multispeciality & Accidental Hospital",
+      "latitude": 20.0003159,
+      "longitude": 73.7546228,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.91
+    },
+    {
+      "id": "OSM_HOSP_7051137474",
+      "name": "Usha Hospital, Nashik",
+      "latitude": 19.9781346,
+      "longitude": 73.7773159,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.92
+    },
+    {
+      "id": "OSM_HOSP_7655439035",
+      "name": "Shree Yash Hospital",
+      "latitude": 19.9772489,
+      "longitude": 73.7790988,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 3.96
+    },
+    {
+      "id": "OSM_HOSP_7649608316",
+      "name": "Sahwas Hospital Private Limited",
+      "latitude": 20.044371,
+      "longitude": 73.805414,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.01
+    },
+    {
+      "id": "OSM_HOSP_7655439101",
+      "name": "Shatayushi Hospital",
+      "latitude": 19.9740591,
+      "longitude": 73.7864378,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.15
+    },
+    {
+      "id": "OSM_HOSP_7649608347",
+      "name": "Dr. Sonawane's Seva Hospital",
+      "latitude": 20.0460542,
+      "longitude": 73.8053156,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.18
+    },
+    {
+      "id": "OSM_HOSP_7655439082",
+      "name": "Ashoka Medicover Hospitals",
+      "latitude": 19.973565,
+      "longitude": 73.791407,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.19
+    },
+    {
+      "id": "OSM_HOSP_7045917537",
+      "name": "Muktai Hospital, Jalgaon",
+      "latitude": 19.9778567,
+      "longitude": 73.8106236,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.28
+    },
+    {
+      "id": "OSM_HOSP_7655439084",
+      "name": "M H Pawar Hospital",
+      "latitude": 19.9725945,
+      "longitude": 73.7866612,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.31
+    },
+    {
+      "id": "OSM_HOSP_7070517391",
+      "name": "Anand Hospital and Nursing Home",
+      "latitude": 19.972578,
+      "longitude": 73.7866808,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.32
+    },
+    {
+      "id": "OSM_HOSP_607743577",
+      "name": "Shree Guruji Hospital",
+      "latitude": 20.0116134,
+      "longitude": 73.7487076,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.34
+    },
+    {
+      "id": "OSM_HOSP_7655439071",
+      "name": "Shivom Hospital",
+      "latitude": 19.9721205,
+      "longitude": 73.7863675,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.37
+    },
+    {
+      "id": "OSM_HOSP_7649608357",
+      "name": "Bhosale Multi - Speciality Hospital",
+      "latitude": 20.0124785,
+      "longitude": 73.7480373,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.41
+    },
+    {
+      "id": "OSM_HOSP_7649608370",
+      "name": "Niramay Hospital",
+      "latitude": 20.0126765,
+      "longitude": 73.748066,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.41
+    },
+    {
+      "id": "OSM_HOSP_7054529046",
+      "name": "Life Care Hospital, Nashik",
+      "latitude": 19.9724375,
+      "longitude": 73.7730458,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.67
+    },
+    {
+      "id": "OSM_HOSP_5447118540",
+      "name": "Dr.Paner Surgical Hospital",
+      "latitude": 19.9827257,
+      "longitude": 73.755308,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.84
+    },
+    {
+      "id": "OSM_HOSP_1466087820",
+      "name": "Divya Cinemas",
+      "latitude": 19.9814494,
+      "longitude": 73.7561023,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.87
+    },
+    {
+      "id": "OSM_HOSP_7655439059",
+      "name": "Aaditya Children's Hospital",
+      "latitude": 19.9829918,
+      "longitude": 73.7542889,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.9
+    },
+    {
+      "id": "OSM_HOSP_7655439098",
+      "name": "Snehal Hospital",
+      "latitude": 19.9730585,
+      "longitude": 73.7668554,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.9
+    },
+    {
+      "id": "OSM_HOSP_7655439090",
+      "name": "Dr. Shyam Chaudhari Children Hospital",
+      "latitude": 19.981838,
+      "longitude": 73.7551263,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.91
+    },
+    {
+      "id": "OSM_HOSP_7054453176",
+      "name": "Asha Kendra Hospital",
+      "latitude": 19.9765314,
+      "longitude": 73.8193629,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.92
+    },
+    {
+      "id": "OSM_HOSP_7655439019",
+      "name": "Bora Hospital",
+      "latitude": 19.9679023,
+      "longitude": 73.7776973,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 4.99
+    },
+    {
+      "id": "OSM_HOSP_7049770679",
+      "name": "Sukhakarta Hospital",
+      "latitude": 19.9850043,
+      "longitude": 73.749032,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.2
+    },
+    {
+      "id": "OSM_HOSP_7655439014",
+      "name": "Ashirwad Nursing Home",
+      "latitude": 19.965107,
+      "longitude": 73.781978,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.2
+    },
+    {
+      "id": "OSM_HOSP_7649608361",
+      "name": "Aaditya Women's Hospital",
+      "latitude": 20.0121645,
+      "longitude": 73.7395671,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.29
+    },
+    {
+      "id": "OSM_HOSP_7048425352",
+      "name": "Shrinivas Multispeciality Hospital",
+      "latitude": 19.9675714,
+      "longitude": 73.7684003,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.37
+    },
+    {
+      "id": "OSM_HOSP_7229411046",
+      "name": "Samarth General Hospital",
+      "latitude": 19.9673414,
+      "longitude": 73.7681624,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.4
+    },
+    {
+      "id": "OSM_HOSP_7055027734",
+      "name": "Suparanas Home Division Of Uddhav Memorial Hospital",
+      "latitude": 20.0279233,
+      "longitude": 73.8397256,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.49
+    },
+    {
+      "id": "OSM_HOSP_7059172368",
+      "name": "Suman Hospital, Nashik",
+      "latitude": 19.9665045,
+      "longitude": 73.7674903,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.51
+    },
+    {
+      "id": "OSM_HOSP_7082650565",
+      "name": "Shushrusha Hospital, Nashik",
+      "latitude": 19.9698189,
+      "longitude": 73.8213068,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.64
+    },
+    {
+      "id": "OSM_HOSP_7655439072",
+      "name": "Shree Hospital",
+      "latitude": 19.9642261,
+      "longitude": 73.7698069,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.65
+    },
+    {
+      "id": "OSM_HOSP_7041093725",
+      "name": "Aashirwad Hospital, Nashik",
+      "latitude": 19.9820078,
+      "longitude": 73.7453198,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.71
+    },
+    {
+      "id": "OSM_HOSP_7655439105",
+      "name": "Nitin Hospital and Medical",
+      "latitude": 19.9684731,
+      "longitude": 73.7592265,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.76
+    },
+    {
+      "id": "OSM_HOSP_7082579558",
+      "name": "Vatshalya Maternity Hospital and Infertility Clinic",
+      "latitude": 19.9646578,
+      "longitude": 73.7659286,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.77
+    },
+    {
+      "id": "OSM_HOSP_7086906890",
+      "name": "Swami Hospital Nasik",
+      "latitude": 19.9685231,
+      "longitude": 73.7589361,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.77
+    },
+    {
+      "id": "OSM_HOSP_7655439016",
+      "name": "Swami Criticare Hospital",
+      "latitude": 19.96795,
+      "longitude": 73.759779,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.77
+    },
+    {
+      "id": "OSM_HOSP_7655439093",
+      "name": "Ishwar Krupa Maternity Hospital",
+      "latitude": 19.9716262,
+      "longitude": 73.7544991,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.78
+    },
+    {
+      "id": "OSM_HOSP_7655439017",
+      "name": "Eshwar Krupa Hospital",
+      "latitude": 19.9713382,
+      "longitude": 73.754374,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.81
+    },
+    {
+      "id": "OSM_HOSP_7080205236",
+      "name": "Sahajeevan General Hospital",
+      "latitude": 19.9642255,
+      "longitude": 73.7649067,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.86
+    },
+    {
+      "id": "OSM_HOSP_7229411004",
+      "name": "NMCH, Cidco",
+      "latitude": 19.9654705,
+      "longitude": 73.7622144,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.87
+    },
+    {
+      "id": "OSM_HOSP_7655439088",
+      "name": "Dr. Darade Hospital",
+      "latitude": 19.9691554,
+      "longitude": 73.7553655,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.93
+    },
+    {
+      "id": "OSM_HOSP_7655439066",
+      "name": "Tirupati Hospital",
+      "latitude": 19.969313,
+      "longitude": 73.754789,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 5.96
+    },
+    {
+      "id": "OSM_HOSP_7649608356",
+      "name": "Dr. Ahire's Anand Hospital",
+      "latitude": 20.018936,
+      "longitude": 73.847253,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.02
+    },
+    {
+      "id": "OSM_HOSP_7655439060",
+      "name": "Kalpataru Multispeciality Hospital",
+      "latitude": 19.9683919,
+      "longitude": 73.7530445,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.15
+    },
+    {
+      "id": "OSM_HOSP_7045980535",
+      "name": "Dr. Karad Hospital",
+      "latitude": 19.9903392,
+      "longitude": 73.7356223,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.16
+    },
+    {
+      "id": "OSM_HOSP_1466135604",
+      "name": "ESI Hospital Satpur Nashik",
+      "latitude": 19.992252,
+      "longitude": 73.7340086,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.24
+    },
+    {
+      "id": "OSM_HOSP_1469375507",
+      "name": "Indian Security Press Hospital",
+      "latitude": 19.9642834,
+      "longitude": 73.825416,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.39
+    },
+    {
+      "id": "OSM_HOSP_7649608345",
+      "name": "Jeevan Jyoti Hospital",
+      "latitude": 19.970342,
+      "longitude": 73.8337,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.43
+    },
+    {
+      "id": "OSM_HOSP_7649608340",
+      "name": "New Life Hospital",
+      "latitude": 19.9762811,
+      "longitude": 73.8417881,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.64
+    },
+    {
+      "id": "OSM_HOSP_7649608362",
+      "name": "Shree Swami Samarth Hospital",
+      "latitude": 19.9756586,
+      "longitude": 73.8418277,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.69
+    },
+    {
+      "id": "OSM_HOSP_7229411034",
+      "name": "NSKMC Panchak Hospital",
+      "latitude": 19.9864534,
+      "longitude": 73.8492727,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.76
+    },
+    {
+      "id": "OSM_HOSP_7649608372",
+      "name": "Nandurkar Hospital",
+      "latitude": 19.9724377,
+      "longitude": 73.8408513,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.83
+    },
+    {
+      "id": "OSM_HOSP_7655439034",
+      "name": "Saptashrungi Hospital",
+      "latitude": 19.9553557,
+      "longitude": 73.7629399,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.84
+    },
+    {
+      "id": "OSM_HOSP_7649608355",
+      "name": "Suman Hospital",
+      "latitude": 19.9579069,
+      "longitude": 73.8237349,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 6.89
+    },
+    {
+      "id": "OSM_HOSP_7043011303",
+      "name": "Vakratunda Multispeciality Hospital - Nasik",
+      "latitude": 19.9551579,
+      "longitude": 73.7575868,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.11
+    },
+    {
+      "id": "OSM_HOSP_1469375505",
+      "name": "Sujata Birla Hospital and Medical Research Centre",
+      "latitude": 19.9597027,
+      "longitude": 73.8310379,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.14
+    },
+    {
+      "id": "OSM_HOSP_7649608320",
+      "name": "Akshay Hospital",
+      "latitude": 19.961164,
+      "longitude": 73.833422,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.17
+    },
+    {
+      "id": "OSM_HOSP_13483091592",
+      "name": "Shiv Multi Speciality Hospital",
+      "latitude": 19.9871436,
+      "longitude": 73.7264041,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.19
+    },
+    {
+      "id": "OSM_HOSP_7081965751",
+      "name": "Gujarathi Hospital",
+      "latitude": 19.958432,
+      "longitude": 73.8352811,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.53
+    },
+    {
+      "id": "OSM_HOSP_7041066632",
+      "name": "Sarthak Hospital, Nashik",
+      "latitude": 19.9886951,
+      "longitude": 73.7221402,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.54
+    },
+    {
+      "id": "OSM_HOSP_7649608324",
+      "name": "Dr. Pawar Children's Hospital",
+      "latitude": 20.0121678,
+      "longitude": 73.7180576,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.54
+    },
+    {
+      "id": "OSM_HOSP_7649608349",
+      "name": "Joshi Nursing Home & Ayurved Chikitsa Kendra",
+      "latitude": 19.9865319,
+      "longitude": 73.7224982,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.59
+    },
+    {
+      "id": "OSM_HOSP_7051818380",
+      "name": "Maher Hospital",
+      "latitude": 19.986719,
+      "longitude": 73.7210767,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.72
+    },
+    {
+      "id": "OSM_HOSP_7073687637",
+      "name": "Criticare Hospital For Children",
+      "latitude": 19.959247,
+      "longitude": 73.8391764,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.72
+    },
+    {
+      "id": "OSM_HOSP_7649608326",
+      "name": "Mogal Hospital",
+      "latitude": 19.958211,
+      "longitude": 73.838324,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.75
+    },
+    {
+      "id": "OSM_HOSP_7649608321",
+      "name": "Venus super Speciality Hospital Limited",
+      "latitude": 19.963289,
+      "longitude": 73.734193,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.92
+    },
+    {
+      "id": "OSM_HOSP_7649608348",
+      "name": "Jupiter Multi-Speciality Hospital",
+      "latitude": 19.962274,
+      "longitude": 73.734859,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.95
+    },
+    {
+      "id": "OSM_HOSP_7649608309",
+      "name": "Sai Hospital",
+      "latitude": 20.0323588,
+      "longitude": 73.7174141,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.96
+    },
+    {
+      "id": "OSM_HOSP_7649608319",
+      "name": "Jadhav Hospital",
+      "latitude": 19.9505453,
+      "longitude": 73.8306582,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 7.96
+    },
+    {
+      "id": "OSM_HOSP_7649608335",
+      "name": "Muthal Hospital",
+      "latitude": 19.951081,
+      "longitude": 73.8325961,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.02
+    },
+    {
+      "id": "OSM_HOSP_7649608373",
+      "name": "Shaishav Children Hospital",
+      "latitude": 19.9897577,
+      "longitude": 73.7169553,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.02
+    },
+    {
+      "id": "OSM_HOSP_7649608363",
+      "name": "Dr. Rakesh Tiwari Hospital",
+      "latitude": 19.9503755,
+      "longitude": 73.8316399,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.03
+    },
+    {
+      "id": "OSM_HOSP_7649608330",
+      "name": "Omkar Hospital",
+      "latitude": 19.953202,
+      "longitude": 73.836082,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.04
+    },
+    {
+      "id": "OSM_HOSP_7052491864",
+      "name": "Chirayu Childrens Hospital",
+      "latitude": 19.9528704,
+      "longitude": 73.835717,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.05
+    },
+    {
+      "id": "OSM_HOSP_7649608366",
+      "name": "Medicare Multispeciality Hospital",
+      "latitude": 19.952837,
+      "longitude": 73.835853,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.06
+    },
+    {
+      "id": "OSM_HOSP_7081227381",
+      "name": "Om Hospital",
+      "latitude": 19.952762,
+      "longitude": 73.8360912,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.08
+    },
+    {
+      "id": "OSM_HOSP_7081965723",
+      "name": "Dr Gajare Hospital",
+      "latitude": 20.0066108,
+      "longitude": 73.7115562,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.24
+    },
+    {
+      "id": "OSM_HOSP_7649608336",
+      "name": "Aai Nursing & Maternity Home",
+      "latitude": 20.0089338,
+      "longitude": 73.7111851,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.26
+    },
+    {
+      "id": "OSM_HOSP_7649608329",
+      "name": "Sankalp Hospital",
+      "latitude": 20.0023416,
+      "longitude": 73.7111518,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.32
+    },
+    {
+      "id": "OSM_HOSP_7649608333",
+      "name": "Sanjeevani Dental and Accident Hospital",
+      "latitude": 19.950332,
+      "longitude": 73.836886,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.35
+    },
+    {
+      "id": "OSM_HOSP_7073799784",
+      "name": "Nashikroad Multispeciality Hospital",
+      "latitude": 19.9503819,
+      "longitude": 73.8375691,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.38
+    },
+    {
+      "id": "OSM_HOSP_7085685380",
+      "name": "Jairam Hospitals and Research Centre Pvt Ltd",
+      "latitude": 19.95105,
+      "longitude": 73.8386245,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.39
+    },
+    {
+      "id": "OSM_HOSP_7649608318",
+      "name": "Shree Sankalp Hospital",
+      "latitude": 19.9480032,
+      "longitude": 73.834358,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.41
+    },
+    {
+      "id": "OSM_HOSP_819109649",
+      "name": "Matoshree Hospital",
+      "latitude": 19.9504587,
+      "longitude": 73.838199,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.41
+    },
+    {
+      "id": "OSM_HOSP_7649608365",
+      "name": "Divya Jyot Hospital",
+      "latitude": 19.9477355,
+      "longitude": 73.8344262,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.44
+    },
+    {
+      "id": "OSM_HOSP_7649608342",
+      "name": "Sai Seva Children Hospital",
+      "latitude": 19.9502598,
+      "longitude": 73.8385475,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.45
+    },
+    {
+      "id": "OSM_HOSP_7053694059",
+      "name": "Surana Hospital - Nasik Road",
+      "latitude": 19.9476728,
+      "longitude": 73.8346964,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.46
+    },
+    {
+      "id": "OSM_HOSP_7649608307",
+      "name": "Sanjivani Hospital",
+      "latitude": 20.0085141,
+      "longitude": 73.7088611,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.51
+    },
+    {
+      "id": "OSM_HOSP_7649608367",
+      "name": "Janki Maternity Home",
+      "latitude": 19.9476983,
+      "longitude": 73.8356664,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.51
+    },
+    {
+      "id": "OSM_HOSP_1466145716",
+      "name": "NSKMC JDC Bytco Hospital-(D)",
+      "latitude": 19.9485767,
+      "longitude": 73.8380063,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.57
+    },
+    {
+      "id": "OSM_HOSP_7649608369",
+      "name": "Shree Siddhivinayak Hospital",
+      "latitude": 19.9472146,
+      "longitude": 73.8375857,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.67
+    },
+    {
+      "id": "OSM_HOSP_7649608358",
+      "name": "Shree Sai Hospital",
+      "latitude": 19.996016,
+      "longitude": 73.7064476,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 8.92
+    },
+    {
+      "id": "OSM_HOSP_1470231894",
+      "name": "General Hospital (OSM 1470231894)",
+      "latitude": 19.947329,
+      "longitude": 73.8474309,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 9.29
+    },
+    {
+      "id": "OSM_HOSP_7649608334",
+      "name": "Dr. Tamboli Hospital",
+      "latitude": 19.9741286,
+      "longitude": 73.8775552,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 10.01
+    },
+    {
+      "id": "OSM_HOSP_7649608325",
+      "name": "Pragati Health Care Hospital",
+      "latitude": 19.9073141,
+      "longitude": 73.8327094,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 12.38
+    },
+    {
+      "id": "OSM_HOSP_1482837318",
+      "name": "Cantoment General Hospital",
+      "latitude": 19.90293,
+      "longitude": 73.8260001,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 12.61
+    },
+    {
+      "id": "OSM_HOSP_7229411026",
+      "name": "Rural Hospital Girnare",
+      "latitude": 20.072457,
+      "longitude": 73.663926,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 14.85
+    },
+    {
+      "id": "OSM_HOSP_7053152428",
+      "name": "Sneha Hospital",
+      "latitude": 20.0807305,
+      "longitude": 73.9128466,
+      "capacity": 150,
+      "occupied_beds": 97,
+      "specialties": [
+        "ICU",
+        "Trauma",
+        "General"
+      ],
+      "active": true,
+      "distance_km": 14.96
+    }
+  ]
+}

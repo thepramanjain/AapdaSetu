@@ -1,0 +1,982 @@
+{
+  "status": "success",
+  "route_status": "caution",
+  "distance_km": 2.68,
+  "duration_minutes": 3.7,
+  "routing_advice": "WARNING: Active blockages detected near route. Road segment 'Unnamed Road Segment (OSM Way 27267903)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 54780817)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 54780921)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 54786539)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 54786550)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 55480321)' near Origin is flooded., Road segment 'Baba Pora Road' near Origin is flooded., Road segment 'Baba Pora Road' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 55667586)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 55667588)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 55894136)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 55894137)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 55894176)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56240561)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56242303)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249232)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249245)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249258)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249270)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 56249271)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249804)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56382677)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56382757)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 56382768)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56629040)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 56723485)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 82128111)' near Origin is flooded., Road segment 'Medical College Road' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 168151570)' near Origin is blocked., Road segment 'Budshah Flyover' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 460614661)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 460697538)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 460698706)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 460798835)' near Origin is blocked., Road segment 'Bike Rental in Srinagar' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 460983042)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 460983043)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 460987579)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 461965439)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 541803926)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 541803938)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 541803951)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 541803955)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 541803977)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 542177388)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 542177389)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 674493861)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 674493872)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 679372265)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 679372270)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 679372291)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 679372299)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 681410613)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973084)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973097)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973106)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 681997147)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681997160)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681997186)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681997225)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681997234)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 681997238)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 681998122)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 682025770)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 755696819)' near Origin is blocked., Road segment 'Budshah Flyover' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 755696838)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 827785478)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1116487775)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1118417092)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120475603)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120478554)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120479612)' near Origin is blocked., Road segment 'Jangalwadi' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1120481063)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1121136491)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1121950323)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1121962875)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1121962881)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1121965137)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1124337617)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1124342934)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1124348386)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1124351721)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1124351722)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1124353685)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1124357286)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1124357289)' near Origin is blocked., Road segment 'Unnamed Road Segment (OSM Way 1124454812)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1224422264)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1413618973)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 1413800050)' near Origin is flooded., Road segment 'Unnamed Road Segment (OSM Way 27267903)' near Destination is flooded., Road segment 'Munawar Link Road' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 54780817)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 54780921)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 54786550)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 55480321)' near Destination is flooded., Road segment 'Baba Pora Road' near Destination is flooded., Road segment 'Baba Pora Road' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 55480529)' near Destination is flooded., Road segment 'Maisuma Road' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 55667586)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 55667588)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 55746223)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 55894136)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 55894137)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 55894176)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249804)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 56249895)' near Destination is flooded., Road segment 'Medical College Road' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 169917059)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 459233463)' near Destination is flooded., Road segment 'Budshah Flyover' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 459922136)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 460614661)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 460697538)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 460698706)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 460798835)' near Destination is blocked., Road segment 'Bike Rental in Srinagar' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 460983042)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 460983043)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 541803912)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 541803938)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 541803951)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 554582457)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 674493872)' near Destination is flooded., Road segment 'Baba Dawood Khaki Bridge' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 679372265)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 679372270)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 679372291)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 680689073)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 681782478)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973084)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973097)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 681973106)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 681973123)' near Destination is flooded., Road segment 'Budshah Flyover' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 755696838)' near Destination is flooded., Road segment 'Fakhr-e-Kashmir bridge' near Destination is flooded., Road segment 'Munawar Link Road' near Destination is flooded., Road segment 'Nalamar - Khanyar Road' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 827785478)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1116456159)' near Destination is flooded., Road segment 'Rambagh Flyover' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1118417092)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120475603)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120478554)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1120479612)' near Destination is blocked., Road segment 'Jangalwadi' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 1120481063)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1121585121)' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 1121647007)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1121650036)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1122042688)' near Destination is flooded., Road segment 'Budshah Flyover' near Destination is blocked., Road segment 'Munawar Link Road' near Destination is blocked., Road segment 'Unnamed Road Segment (OSM Way 1412426587)' near Destination is flooded., Road segment 'Maulana Azad (MA) Road' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1413618973)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1413801805)' near Destination is flooded., Road segment 'Unnamed Road Segment (OSM Way 1415668865)' near Destination is flooded.. Evacuation vehicles must reroute and proceed with caution.",
+  "blockages_flagged": [
+    {
+      "road_id": "27267903",
+      "name": "Unnamed Road Segment (OSM Way 27267903)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 27267903)' near Origin is flooded."
+    },
+    {
+      "road_id": "54780817",
+      "name": "Unnamed Road Segment (OSM Way 54780817)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54780817)' near Origin is flooded."
+    },
+    {
+      "road_id": "54780921",
+      "name": "Unnamed Road Segment (OSM Way 54780921)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54780921)' near Origin is flooded."
+    },
+    {
+      "road_id": "54786539",
+      "name": "Unnamed Road Segment (OSM Way 54786539)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54786539)' near Origin is blocked."
+    },
+    {
+      "road_id": "54786550",
+      "name": "Unnamed Road Segment (OSM Way 54786550)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54786550)' near Origin is flooded."
+    },
+    {
+      "road_id": "55480321",
+      "name": "Unnamed Road Segment (OSM Way 55480321)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55480321)' near Origin is flooded."
+    },
+    {
+      "road_id": "55480334",
+      "name": "Baba Pora Road",
+      "status": "flooded",
+      "message": "Road segment 'Baba Pora Road' near Origin is flooded."
+    },
+    {
+      "road_id": "55480335",
+      "name": "Baba Pora Road",
+      "status": "blocked",
+      "message": "Road segment 'Baba Pora Road' near Origin is blocked."
+    },
+    {
+      "road_id": "55667586",
+      "name": "Unnamed Road Segment (OSM Way 55667586)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55667586)' near Origin is flooded."
+    },
+    {
+      "road_id": "55667588",
+      "name": "Unnamed Road Segment (OSM Way 55667588)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55667588)' near Origin is blocked."
+    },
+    {
+      "road_id": "55894136",
+      "name": "Unnamed Road Segment (OSM Way 55894136)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894136)' near Origin is blocked."
+    },
+    {
+      "road_id": "55894137",
+      "name": "Unnamed Road Segment (OSM Way 55894137)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894137)' near Origin is flooded."
+    },
+    {
+      "road_id": "55894176",
+      "name": "Unnamed Road Segment (OSM Way 55894176)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894176)' near Origin is flooded."
+    },
+    {
+      "road_id": "56240561",
+      "name": "Unnamed Road Segment (OSM Way 56240561)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56240561)' near Origin is flooded."
+    },
+    {
+      "road_id": "56242303",
+      "name": "Unnamed Road Segment (OSM Way 56242303)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56242303)' near Origin is flooded."
+    },
+    {
+      "road_id": "56249232",
+      "name": "Unnamed Road Segment (OSM Way 56249232)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249232)' near Origin is flooded."
+    },
+    {
+      "road_id": "56249245",
+      "name": "Unnamed Road Segment (OSM Way 56249245)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249245)' near Origin is flooded."
+    },
+    {
+      "road_id": "56249258",
+      "name": "Unnamed Road Segment (OSM Way 56249258)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249258)' near Origin is flooded."
+    },
+    {
+      "road_id": "56249270",
+      "name": "Unnamed Road Segment (OSM Way 56249270)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249270)' near Origin is blocked."
+    },
+    {
+      "road_id": "56249271",
+      "name": "Unnamed Road Segment (OSM Way 56249271)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249271)' near Origin is flooded."
+    },
+    {
+      "road_id": "56249804",
+      "name": "Unnamed Road Segment (OSM Way 56249804)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249804)' near Origin is flooded."
+    },
+    {
+      "road_id": "56382677",
+      "name": "Unnamed Road Segment (OSM Way 56382677)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56382677)' near Origin is flooded."
+    },
+    {
+      "road_id": "56382757",
+      "name": "Unnamed Road Segment (OSM Way 56382757)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56382757)' near Origin is blocked."
+    },
+    {
+      "road_id": "56382768",
+      "name": "Unnamed Road Segment (OSM Way 56382768)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56382768)' near Origin is flooded."
+    },
+    {
+      "road_id": "56629040",
+      "name": "Unnamed Road Segment (OSM Way 56629040)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56629040)' near Origin is flooded."
+    },
+    {
+      "road_id": "56723485",
+      "name": "Unnamed Road Segment (OSM Way 56723485)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56723485)' near Origin is flooded."
+    },
+    {
+      "road_id": "82128111",
+      "name": "Unnamed Road Segment (OSM Way 82128111)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 82128111)' near Origin is flooded."
+    },
+    {
+      "road_id": "100132998",
+      "name": "Medical College Road",
+      "status": "blocked",
+      "message": "Road segment 'Medical College Road' near Origin is blocked."
+    },
+    {
+      "road_id": "168151570",
+      "name": "Unnamed Road Segment (OSM Way 168151570)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 168151570)' near Origin is blocked."
+    },
+    {
+      "road_id": "459237823",
+      "name": "Budshah Flyover",
+      "status": "blocked",
+      "message": "Road segment 'Budshah Flyover' near Origin is blocked."
+    },
+    {
+      "road_id": "460614661",
+      "name": "Unnamed Road Segment (OSM Way 460614661)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460614661)' near Origin is flooded."
+    },
+    {
+      "road_id": "460697538",
+      "name": "Unnamed Road Segment (OSM Way 460697538)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460697538)' near Origin is blocked."
+    },
+    {
+      "road_id": "460698706",
+      "name": "Unnamed Road Segment (OSM Way 460698706)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460698706)' near Origin is flooded."
+    },
+    {
+      "road_id": "460798835",
+      "name": "Unnamed Road Segment (OSM Way 460798835)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460798835)' near Origin is blocked."
+    },
+    {
+      "road_id": "460798845",
+      "name": "Bike Rental in Srinagar",
+      "status": "flooded",
+      "message": "Road segment 'Bike Rental in Srinagar' near Origin is flooded."
+    },
+    {
+      "road_id": "460983042",
+      "name": "Unnamed Road Segment (OSM Way 460983042)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460983042)' near Origin is flooded."
+    },
+    {
+      "road_id": "460983043",
+      "name": "Unnamed Road Segment (OSM Way 460983043)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460983043)' near Origin is blocked."
+    },
+    {
+      "road_id": "460987579",
+      "name": "Unnamed Road Segment (OSM Way 460987579)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460987579)' near Origin is flooded."
+    },
+    {
+      "road_id": "461965439",
+      "name": "Unnamed Road Segment (OSM Way 461965439)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 461965439)' near Origin is flooded."
+    },
+    {
+      "road_id": "541803926",
+      "name": "Unnamed Road Segment (OSM Way 541803926)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803926)' near Origin is blocked."
+    },
+    {
+      "road_id": "541803938",
+      "name": "Unnamed Road Segment (OSM Way 541803938)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803938)' near Origin is flooded."
+    },
+    {
+      "road_id": "541803951",
+      "name": "Unnamed Road Segment (OSM Way 541803951)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803951)' near Origin is flooded."
+    },
+    {
+      "road_id": "541803955",
+      "name": "Unnamed Road Segment (OSM Way 541803955)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803955)' near Origin is blocked."
+    },
+    {
+      "road_id": "541803977",
+      "name": "Unnamed Road Segment (OSM Way 541803977)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803977)' near Origin is flooded."
+    },
+    {
+      "road_id": "542177388",
+      "name": "Unnamed Road Segment (OSM Way 542177388)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 542177388)' near Origin is blocked."
+    },
+    {
+      "road_id": "542177389",
+      "name": "Unnamed Road Segment (OSM Way 542177389)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 542177389)' near Origin is flooded."
+    },
+    {
+      "road_id": "674493861",
+      "name": "Unnamed Road Segment (OSM Way 674493861)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 674493861)' near Origin is blocked."
+    },
+    {
+      "road_id": "674493872",
+      "name": "Unnamed Road Segment (OSM Way 674493872)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 674493872)' near Origin is flooded."
+    },
+    {
+      "road_id": "679372265",
+      "name": "Unnamed Road Segment (OSM Way 679372265)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372265)' near Origin is flooded."
+    },
+    {
+      "road_id": "679372270",
+      "name": "Unnamed Road Segment (OSM Way 679372270)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372270)' near Origin is blocked."
+    },
+    {
+      "road_id": "679372291",
+      "name": "Unnamed Road Segment (OSM Way 679372291)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372291)' near Origin is flooded."
+    },
+    {
+      "road_id": "679372299",
+      "name": "Unnamed Road Segment (OSM Way 679372299)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372299)' near Origin is blocked."
+    },
+    {
+      "road_id": "681410613",
+      "name": "Unnamed Road Segment (OSM Way 681410613)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681410613)' near Origin is flooded."
+    },
+    {
+      "road_id": "681973084",
+      "name": "Unnamed Road Segment (OSM Way 681973084)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973084)' near Origin is flooded."
+    },
+    {
+      "road_id": "681973097",
+      "name": "Unnamed Road Segment (OSM Way 681973097)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973097)' near Origin is flooded."
+    },
+    {
+      "road_id": "681973106",
+      "name": "Unnamed Road Segment (OSM Way 681973106)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973106)' near Origin is blocked."
+    },
+    {
+      "road_id": "681997147",
+      "name": "Unnamed Road Segment (OSM Way 681997147)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997147)' near Origin is flooded."
+    },
+    {
+      "road_id": "681997160",
+      "name": "Unnamed Road Segment (OSM Way 681997160)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997160)' near Origin is flooded."
+    },
+    {
+      "road_id": "681997186",
+      "name": "Unnamed Road Segment (OSM Way 681997186)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997186)' near Origin is flooded."
+    },
+    {
+      "road_id": "681997225",
+      "name": "Unnamed Road Segment (OSM Way 681997225)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997225)' near Origin is flooded."
+    },
+    {
+      "road_id": "681997234",
+      "name": "Unnamed Road Segment (OSM Way 681997234)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997234)' near Origin is blocked."
+    },
+    {
+      "road_id": "681997238",
+      "name": "Unnamed Road Segment (OSM Way 681997238)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681997238)' near Origin is flooded."
+    },
+    {
+      "road_id": "681998122",
+      "name": "Unnamed Road Segment (OSM Way 681998122)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681998122)' near Origin is flooded."
+    },
+    {
+      "road_id": "682025770",
+      "name": "Unnamed Road Segment (OSM Way 682025770)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 682025770)' near Origin is blocked."
+    },
+    {
+      "road_id": "755696819",
+      "name": "Unnamed Road Segment (OSM Way 755696819)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 755696819)' near Origin is blocked."
+    },
+    {
+      "road_id": "755696825",
+      "name": "Budshah Flyover",
+      "status": "flooded",
+      "message": "Road segment 'Budshah Flyover' near Origin is flooded."
+    },
+    {
+      "road_id": "755696838",
+      "name": "Unnamed Road Segment (OSM Way 755696838)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 755696838)' near Origin is flooded."
+    },
+    {
+      "road_id": "827785478",
+      "name": "Unnamed Road Segment (OSM Way 827785478)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 827785478)' near Origin is flooded."
+    },
+    {
+      "road_id": "1116487775",
+      "name": "Unnamed Road Segment (OSM Way 1116487775)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1116487775)' near Origin is flooded."
+    },
+    {
+      "road_id": "1118417092",
+      "name": "Unnamed Road Segment (OSM Way 1118417092)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1118417092)' near Origin is flooded."
+    },
+    {
+      "road_id": "1120475603",
+      "name": "Unnamed Road Segment (OSM Way 1120475603)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120475603)' near Origin is flooded."
+    },
+    {
+      "road_id": "1120478554",
+      "name": "Unnamed Road Segment (OSM Way 1120478554)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120478554)' near Origin is flooded."
+    },
+    {
+      "road_id": "1120479612",
+      "name": "Unnamed Road Segment (OSM Way 1120479612)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120479612)' near Origin is blocked."
+    },
+    {
+      "road_id": "1120481062",
+      "name": "Jangalwadi",
+      "status": "blocked",
+      "message": "Road segment 'Jangalwadi' near Origin is blocked."
+    },
+    {
+      "road_id": "1120481063",
+      "name": "Unnamed Road Segment (OSM Way 1120481063)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120481063)' near Origin is flooded."
+    },
+    {
+      "road_id": "1121136491",
+      "name": "Unnamed Road Segment (OSM Way 1121136491)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121136491)' near Origin is blocked."
+    },
+    {
+      "road_id": "1121950323",
+      "name": "Unnamed Road Segment (OSM Way 1121950323)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121950323)' near Origin is flooded."
+    },
+    {
+      "road_id": "1121962875",
+      "name": "Unnamed Road Segment (OSM Way 1121962875)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121962875)' near Origin is blocked."
+    },
+    {
+      "road_id": "1121962881",
+      "name": "Unnamed Road Segment (OSM Way 1121962881)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121962881)' near Origin is flooded."
+    },
+    {
+      "road_id": "1121965137",
+      "name": "Unnamed Road Segment (OSM Way 1121965137)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121965137)' near Origin is blocked."
+    },
+    {
+      "road_id": "1124337617",
+      "name": "Unnamed Road Segment (OSM Way 1124337617)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124337617)' near Origin is flooded."
+    },
+    {
+      "road_id": "1124342934",
+      "name": "Unnamed Road Segment (OSM Way 1124342934)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124342934)' near Origin is flooded."
+    },
+    {
+      "road_id": "1124348386",
+      "name": "Unnamed Road Segment (OSM Way 1124348386)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124348386)' near Origin is blocked."
+    },
+    {
+      "road_id": "1124351721",
+      "name": "Unnamed Road Segment (OSM Way 1124351721)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124351721)' near Origin is blocked."
+    },
+    {
+      "road_id": "1124351722",
+      "name": "Unnamed Road Segment (OSM Way 1124351722)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124351722)' near Origin is flooded."
+    },
+    {
+      "road_id": "1124353685",
+      "name": "Unnamed Road Segment (OSM Way 1124353685)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124353685)' near Origin is flooded."
+    },
+    {
+      "road_id": "1124357286",
+      "name": "Unnamed Road Segment (OSM Way 1124357286)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124357286)' near Origin is flooded."
+    },
+    {
+      "road_id": "1124357289",
+      "name": "Unnamed Road Segment (OSM Way 1124357289)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124357289)' near Origin is blocked."
+    },
+    {
+      "road_id": "1124454812",
+      "name": "Unnamed Road Segment (OSM Way 1124454812)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1124454812)' near Origin is flooded."
+    },
+    {
+      "road_id": "1224422264",
+      "name": "Unnamed Road Segment (OSM Way 1224422264)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1224422264)' near Origin is flooded."
+    },
+    {
+      "road_id": "1413618973",
+      "name": "Unnamed Road Segment (OSM Way 1413618973)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1413618973)' near Origin is flooded."
+    },
+    {
+      "road_id": "1413800050",
+      "name": "Unnamed Road Segment (OSM Way 1413800050)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1413800050)' near Origin is flooded."
+    },
+    {
+      "road_id": "27267903",
+      "name": "Unnamed Road Segment (OSM Way 27267903)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 27267903)' near Destination is flooded."
+    },
+    {
+      "road_id": "54640911",
+      "name": "Munawar Link Road",
+      "status": "flooded",
+      "message": "Road segment 'Munawar Link Road' near Destination is flooded."
+    },
+    {
+      "road_id": "54780817",
+      "name": "Unnamed Road Segment (OSM Way 54780817)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54780817)' near Destination is flooded."
+    },
+    {
+      "road_id": "54780921",
+      "name": "Unnamed Road Segment (OSM Way 54780921)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54780921)' near Destination is flooded."
+    },
+    {
+      "road_id": "54786550",
+      "name": "Unnamed Road Segment (OSM Way 54786550)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 54786550)' near Destination is flooded."
+    },
+    {
+      "road_id": "55480321",
+      "name": "Unnamed Road Segment (OSM Way 55480321)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55480321)' near Destination is flooded."
+    },
+    {
+      "road_id": "55480334",
+      "name": "Baba Pora Road",
+      "status": "flooded",
+      "message": "Road segment 'Baba Pora Road' near Destination is flooded."
+    },
+    {
+      "road_id": "55480335",
+      "name": "Baba Pora Road",
+      "status": "blocked",
+      "message": "Road segment 'Baba Pora Road' near Destination is blocked."
+    },
+    {
+      "road_id": "55480529",
+      "name": "Unnamed Road Segment (OSM Way 55480529)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55480529)' near Destination is flooded."
+    },
+    {
+      "road_id": "55493139",
+      "name": "Maisuma Road",
+      "status": "flooded",
+      "message": "Road segment 'Maisuma Road' near Destination is flooded."
+    },
+    {
+      "road_id": "55667586",
+      "name": "Unnamed Road Segment (OSM Way 55667586)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55667586)' near Destination is flooded."
+    },
+    {
+      "road_id": "55667588",
+      "name": "Unnamed Road Segment (OSM Way 55667588)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55667588)' near Destination is blocked."
+    },
+    {
+      "road_id": "55746223",
+      "name": "Unnamed Road Segment (OSM Way 55746223)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55746223)' near Destination is flooded."
+    },
+    {
+      "road_id": "55894136",
+      "name": "Unnamed Road Segment (OSM Way 55894136)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894136)' near Destination is blocked."
+    },
+    {
+      "road_id": "55894137",
+      "name": "Unnamed Road Segment (OSM Way 55894137)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894137)' near Destination is flooded."
+    },
+    {
+      "road_id": "55894176",
+      "name": "Unnamed Road Segment (OSM Way 55894176)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 55894176)' near Destination is flooded."
+    },
+    {
+      "road_id": "56249804",
+      "name": "Unnamed Road Segment (OSM Way 56249804)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249804)' near Destination is flooded."
+    },
+    {
+      "road_id": "56249895",
+      "name": "Unnamed Road Segment (OSM Way 56249895)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 56249895)' near Destination is flooded."
+    },
+    {
+      "road_id": "100132998",
+      "name": "Medical College Road",
+      "status": "blocked",
+      "message": "Road segment 'Medical College Road' near Destination is blocked."
+    },
+    {
+      "road_id": "169917059",
+      "name": "Unnamed Road Segment (OSM Way 169917059)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 169917059)' near Destination is flooded."
+    },
+    {
+      "road_id": "459233463",
+      "name": "Unnamed Road Segment (OSM Way 459233463)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 459233463)' near Destination is flooded."
+    },
+    {
+      "road_id": "459237823",
+      "name": "Budshah Flyover",
+      "status": "blocked",
+      "message": "Road segment 'Budshah Flyover' near Destination is blocked."
+    },
+    {
+      "road_id": "459922136",
+      "name": "Unnamed Road Segment (OSM Way 459922136)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 459922136)' near Destination is blocked."
+    },
+    {
+      "road_id": "460614661",
+      "name": "Unnamed Road Segment (OSM Way 460614661)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460614661)' near Destination is flooded."
+    },
+    {
+      "road_id": "460697538",
+      "name": "Unnamed Road Segment (OSM Way 460697538)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460697538)' near Destination is blocked."
+    },
+    {
+      "road_id": "460698706",
+      "name": "Unnamed Road Segment (OSM Way 460698706)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460698706)' near Destination is flooded."
+    },
+    {
+      "road_id": "460798835",
+      "name": "Unnamed Road Segment (OSM Way 460798835)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460798835)' near Destination is blocked."
+    },
+    {
+      "road_id": "460798845",
+      "name": "Bike Rental in Srinagar",
+      "status": "flooded",
+      "message": "Road segment 'Bike Rental in Srinagar' near Destination is flooded."
+    },
+    {
+      "road_id": "460983042",
+      "name": "Unnamed Road Segment (OSM Way 460983042)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460983042)' near Destination is flooded."
+    },
+    {
+      "road_id": "460983043",
+      "name": "Unnamed Road Segment (OSM Way 460983043)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 460983043)' near Destination is blocked."
+    },
+    {
+      "road_id": "541803912",
+      "name": "Unnamed Road Segment (OSM Way 541803912)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803912)' near Destination is flooded."
+    },
+    {
+      "road_id": "541803938",
+      "name": "Unnamed Road Segment (OSM Way 541803938)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803938)' near Destination is flooded."
+    },
+    {
+      "road_id": "541803951",
+      "name": "Unnamed Road Segment (OSM Way 541803951)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 541803951)' near Destination is flooded."
+    },
+    {
+      "road_id": "554582457",
+      "name": "Unnamed Road Segment (OSM Way 554582457)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 554582457)' near Destination is flooded."
+    },
+    {
+      "road_id": "674493872",
+      "name": "Unnamed Road Segment (OSM Way 674493872)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 674493872)' near Destination is flooded."
+    },
+    {
+      "road_id": "676609258",
+      "name": "Baba Dawood Khaki Bridge",
+      "status": "flooded",
+      "message": "Road segment 'Baba Dawood Khaki Bridge' near Destination is flooded."
+    },
+    {
+      "road_id": "679372265",
+      "name": "Unnamed Road Segment (OSM Way 679372265)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372265)' near Destination is flooded."
+    },
+    {
+      "road_id": "679372270",
+      "name": "Unnamed Road Segment (OSM Way 679372270)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372270)' near Destination is blocked."
+    },
+    {
+      "road_id": "679372291",
+      "name": "Unnamed Road Segment (OSM Way 679372291)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 679372291)' near Destination is flooded."
+    },
+    {
+      "road_id": "680689073",
+      "name": "Unnamed Road Segment (OSM Way 680689073)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 680689073)' near Destination is blocked."
+    },
+    {
+      "road_id": "681782478",
+      "name": "Unnamed Road Segment (OSM Way 681782478)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681782478)' near Destination is flooded."
+    },
+    {
+      "road_id": "681973084",
+      "name": "Unnamed Road Segment (OSM Way 681973084)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973084)' near Destination is flooded."
+    },
+    {
+      "road_id": "681973097",
+      "name": "Unnamed Road Segment (OSM Way 681973097)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973097)' near Destination is flooded."
+    },
+    {
+      "road_id": "681973106",
+      "name": "Unnamed Road Segment (OSM Way 681973106)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973106)' near Destination is blocked."
+    },
+    {
+      "road_id": "681973123",
+      "name": "Unnamed Road Segment (OSM Way 681973123)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 681973123)' near Destination is flooded."
+    },
+    {
+      "road_id": "755696825",
+      "name": "Budshah Flyover",
+      "status": "flooded",
+      "message": "Road segment 'Budshah Flyover' near Destination is flooded."
+    },
+    {
+      "road_id": "755696838",
+      "name": "Unnamed Road Segment (OSM Way 755696838)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 755696838)' near Destination is flooded."
+    },
+    {
+      "road_id": "816901475",
+      "name": "Fakhr-e-Kashmir bridge",
+      "status": "flooded",
+      "message": "Road segment 'Fakhr-e-Kashmir bridge' near Destination is flooded."
+    },
+    {
+      "road_id": "817158537",
+      "name": "Munawar Link Road",
+      "status": "flooded",
+      "message": "Road segment 'Munawar Link Road' near Destination is flooded."
+    },
+    {
+      "road_id": "817163363",
+      "name": "Nalamar - Khanyar Road",
+      "status": "blocked",
+      "message": "Road segment 'Nalamar - Khanyar Road' near Destination is blocked."
+    },
+    {
+      "road_id": "827785478",
+      "name": "Unnamed Road Segment (OSM Way 827785478)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 827785478)' near Destination is flooded."
+    },
+    {
+      "road_id": "1116456159",
+      "name": "Unnamed Road Segment (OSM Way 1116456159)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1116456159)' near Destination is flooded."
+    },
+    {
+      "road_id": "1116598587",
+      "name": "Rambagh Flyover",
+      "status": "flooded",
+      "message": "Road segment 'Rambagh Flyover' near Destination is flooded."
+    },
+    {
+      "road_id": "1118417092",
+      "name": "Unnamed Road Segment (OSM Way 1118417092)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1118417092)' near Destination is flooded."
+    },
+    {
+      "road_id": "1120475603",
+      "name": "Unnamed Road Segment (OSM Way 1120475603)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120475603)' near Destination is flooded."
+    },
+    {
+      "road_id": "1120478554",
+      "name": "Unnamed Road Segment (OSM Way 1120478554)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120478554)' near Destination is flooded."
+    },
+    {
+      "road_id": "1120479612",
+      "name": "Unnamed Road Segment (OSM Way 1120479612)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120479612)' near Destination is blocked."
+    },
+    {
+      "road_id": "1120481062",
+      "name": "Jangalwadi",
+      "status": "blocked",
+      "message": "Road segment 'Jangalwadi' near Destination is blocked."
+    },
+    {
+      "road_id": "1120481063",
+      "name": "Unnamed Road Segment (OSM Way 1120481063)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1120481063)' near Destination is flooded."
+    },
+    {
+      "road_id": "1121585121",
+      "name": "Unnamed Road Segment (OSM Way 1121585121)",
+      "status": "blocked",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121585121)' near Destination is blocked."
+    },
+    {
+      "road_id": "1121647007",
+      "name": "Unnamed Road Segment (OSM Way 1121647007)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121647007)' near Destination is flooded."
+    },
+    {
+      "road_id": "1121650036",
+      "name": "Unnamed Road Segment (OSM Way 1121650036)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1121650036)' near Destination is flooded."
+    },
+    {
+      "road_id": "1122042688",
+      "name": "Unnamed Road Segment (OSM Way 1122042688)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1122042688)' near Destination is flooded."
+    },
+    {
+      "road_id": "1318778509",
+      "name": "Budshah Flyover",
+      "status": "blocked",
+      "message": "Road segment 'Budshah Flyover' near Destination is blocked."
+    },
+    {
+      "road_id": "1412426556",
+      "name": "Munawar Link Road",
+      "status": "blocked",
+      "message": "Road segment 'Munawar Link Road' near Destination is blocked."
+    },
+    {
+      "road_id": "1412426587",
+      "name": "Unnamed Road Segment (OSM Way 1412426587)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1412426587)' near Destination is flooded."
+    },
+    {
+      "road_id": "1412656414",
+      "name": "Maulana Azad (MA) Road",
+      "status": "flooded",
+      "message": "Road segment 'Maulana Azad (MA) Road' near Destination is flooded."
+    },
+    {
+      "road_id": "1413618973",
+      "name": "Unnamed Road Segment (OSM Way 1413618973)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1413618973)' near Destination is flooded."
+    },
+    {
+      "road_id": "1413801805",
+      "name": "Unnamed Road Segment (OSM Way 1413801805)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1413801805)' near Destination is flooded."
+    },
+    {
+      "road_id": "1415668865",
+      "name": "Unnamed Road Segment (OSM Way 1415668865)",
+      "status": "flooded",
+      "message": "Road segment 'Unnamed Road Segment (OSM Way 1415668865)' near Destination is flooded."
+    }
+  ],
+  "source": "osrm_routing_api"
+}
