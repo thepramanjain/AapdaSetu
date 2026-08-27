@@ -1,95 +1,127 @@
 # AapdaSetu AI — Disaster Intelligence Platform
 
-**AapdaSetu** is an autonomous multi-agent AI & Blockchain platform for real-time natural disaster intelligence, rapid resource deployment, and transparent relief coordination.
+<div align="center">
 
-> **Status:** The React frontend is now fully integrated with the FastAPI backend. Live disaster reports trigger real-time LLM pipelines (Gemini/Groq) for automated analysis.
+**AI Detects • Actionable Planning • Relief Reaches**
+
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18-blue?logo=react)](https://react.dev/)
+[![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-orange)](https://langchain-ai.github.io/langgraph/)
+[![Gemini](https://img.shields.io/badge/LLM-Gemini%20%7C%20Groq-purple?logo=google)](https://ai.google.dev/)
+[![Web3](https://img.shields.io/badge/Blockchain-Web3.py%20%7C%20Sepolia-blueviolet?logo=ethereum)](https://web3py.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
+
+</div>
 
 ---
 
-## Key Features
-* **Multi-Agent Orchestration:** Powered by **LangGraph** (Gemini/Groq LLaMA) for automated intent geocoding, meteorological analysis, resource matching, and safety reports.
-* **On-Chain Audit Trail:** Registers disaster logs and signs budget approvals directly to the **Ethereum Sepolia Testnet** using Solidity smart contracts.
-* **Local RAG Advisory:** Ingests official NDMA guidelines into a local vector database to generate safe emergency advisories.
-* **Dynamic Portal Dashboards:** Role-based views for Government Approvers, accredited NGOs, and Ground Responders.
+## Overview
+
+**AapdaSetu** (meaning *Bridge to Relief* in Hindi) is a production-hardened, autonomous multi-agent AI platform for real-time natural disaster intelligence. It seamlessly integrates a powerful **React frontend** with a robust **FastAPI backend** to ingest plain-language citizen or agency reports, orchestrating a chain of specialised AI agents to produce:
+
+- Structured **stakeholder reports** (Government / NGO / Public)
+- **Risk classification** (LOW / MEDIUM / HIGH / URGENT / EXTREME) with deterministic scoring
+- **Mission queue** with prioritised rescue or preparedness tasks
+- **Resource discovery** — live hospitals and shelters from OpenStreetMap
+- **Safe evacuation routing** via OSRM
+- **Budget estimation** with heuristic funding recommendations
+- **Blockchain audit trail** — on-chain disaster record via Ethereum smart contract (Sepolia Testnet)
+- **NDMA-grounded advisory** via local RAG over official guidelines
+
+Designed for **Flood** and **Earthquake** disaster types. All agents are stateless LangGraph nodes; the graph is fully deterministic at the routing layer with LLMs (Gemini/Groq) used only for data enrichment and advisory generation.
 
 ---
 
-## System Architecture
+## Architecture
 
-```mermaid
-flowchart TD
-    %% Subgraphs for layered architecture
-    subgraph Clients ["Clients"]
-        A["React (Vite) Web Portal"]
-    end
+### LangGraph Multi-Agent Flow
 
-    subgraph API_Gateway ["API Gateway & Core Orchestration"]
-        B["FastAPI Server"]
-        C["LangGraph Agent Orchestrator"]
-    end
-
-    subgraph External_APIs ["External Intelligence APIs"]
-        D1["Open-Meteo & GloFAS API"]
-        D2["USGS Seismic Catalog"]
-        D3["OSM Overpass & OSRM"]
-        D4["ReliefWeb Reports API"]
-    end
-
-    subgraph Data_Storage ["Data, Vector & Consensus Layer"]
-        E1["MySQL / SQLite DB"]
-        E2["ChromaDB Vector Store"]
-        E3["Ethereum Sepolia Blockchain"]
-    end
-
-    %% Connections
-    A -->|"REST API / JSON"| B
-    B -->|"SSE Stream (Real-Time Logs)"| A
-
-    B -->|"Execute Workflow"| C
-
-    C -->|"Query Telemetry"| D1
-    C -->|"Query Seismic Data"| D2
-    C -->|"Fetch Spatial Assets"| D3
-    C -->|"Fetch News Feed"| D4
-
-    B -->|"Query & Store"| E1
-    C -->|"Vector Search RAG"| E2
-    C -->|"On-chain State Lock"| E3
-
-    %% Styling
-    classDef default fill:#e8e5ff,stroke:#6252cf,stroke-width:1.5px,color:#1e1b4b,font-weight:bold;
-    class A,B,C,D1,D2,D3,D4,E1,E2,E3 default;
-    
-    style Clients fill:#fffdeb,stroke:#d6c611,stroke-dasharray: 5 5;
-    style API_Gateway fill:#fffdeb,stroke:#d6c611,stroke-dasharray: 5 5;
-    style External_APIs fill:#fffdeb,stroke:#d6c611,stroke-dasharray: 5 5;
-    style Data_Storage fill:#fffdeb,stroke:#d6c611,stroke-dasharray: 5 5;
+```text
+┌──────────────────────────────────────────────────────────────┐
+│                        INPUT                                 │
+│  "Heavy flooding reported at Howraghat, Assam"               │
+└───────────────────────────┬──────────────────────────────────┘
+                            │
+                            ▼
+              ┌─────────────────────────┐
+              │   1. Coordinator Agent  │  ← Geocodes location (Nominatim OSM)
+              │      Intent Parser      │    Classifies disaster type (Gemini/Groq)
+              │      Verification       │    Determines verification_status
+              └──────────┬──────────────┘    
+                         │
+          ┌──────────────┴──────────────┐
+          │  Conditional Routing        │
+          ▼ (Flood)                     ▼ (Earthquake)
+┌──────────────────┐         ┌──────────────────────┐
+│  2. Flood Agent  │         │  3. Earthquake Agent  │
+│  Open-Meteo API  │         │    USGS Seismic API   │
+│  GloFAS River    │         │    Magnitude / Depth  │
+│  Discharge       │         │    Aftershock Risk    │
+└────────┬─────────┘         └──────────┬────────────┘
+         └──────────────┬───────────────┘
+                        │
+                        ▼
+          ┌─────────────────────────┐
+          │  4. Resource Agent      │  ← OSM Overpass: hospitals, shelters
+          │     Hospital Tool       │    OSRM: safe route computation
+          │     Shelter Tool        │    Schema-normalises all LLM output
+          └──────────┬──────────────┘    
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  5. RAG Agent           │  ← ChromaDB + SentenceTransformer
+          │     Vector Store        │    NDMA / WHO / NDRF guidelines
+          │     NDMA Guidelines     │    Singleton cache — loads once
+          └──────────┬──────────────┘
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  6. Risk Assessment     │  ← DETERMINISTIC scoring engine
+          │     Agent               │    Priority table:
+          │                         │    verification_status → severity
+          │                         │    → confidence → weather 
+          └──────────┬──────────────┘
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  7. Mission Planner     │  ← Deterministic task registries
+          │     Agent               │    LIVE     → rescue missions
+          │                         │    PREPAREDNESS → checklists
+          │                         │    LLM enriches; fallback guaranteed
+          └──────────┬──────────────┘
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  8. Budget Service      │  ← Heuristic funding estimation
+          │                         │    Severity × affected population
+          └──────────┬──────────────┘
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  9. Blockchain Service  │  ← LIVE only: submit to smart contract
+          │                         │    Immutable audit logs on Sepolia
+          └──────────┬──────────────┘
+                     │
+                     ▼
+          ┌─────────────────────────┐
+          │  10. Reports Service    │  ← Streaming SSE updates to React Frontend
+          │                         │    Government / NGO / Public reports
+          └─────────────────────────┘
 ```
 
-AapdaSetu uses a decoupled three-tier architecture:
-1. **Interactive Frontend:** Built with React & Vite. Tracks real-time updates through a Server-Sent Events (SSE) stream to provide visual feedback during analysis.
-2. **LangGraph Backend:** Built with FastAPI. Orchestrates stateless AI agents, collects environmental data (USGS, Open-Meteo, OpenStreetMap), and serves as the DB/Web3 router.
-3. **Consensus Layer:** Solidity smart contract deployed on the Sepolia Testnet, securing disaster logs, budget limits, and approval states.
-
 ---
 
-## Multi-Agent Workflow
-Every telemetry alert or query triggers the following sequential LangGraph pipeline:
-1. **Intent Parser & Geocoder:** Extracts disaster type and maps raw location strings to GPS coordinates via Nominatim.
-2. **Disaster Agent (Flood/Earthquake):** Fetches live seismic catalog (USGS) or river discharge forecasts (GloFAS/Open-Meteo) to evaluate environmental severity.
-3. **Resource Agent:** Locates nearby hospitals and shelters via OpenStreetMap and calculates safe evacuation routes using OSRM.
-4. **RAG Advisory Agent:** Conducts semantic searches over official NDMA/WHO manuals to output localized safety guidelines.
-5. **Risk Assessment:** Computes a deterministic risk rating (LOW to EXTREME) based on severity, population exposure, and weather trends.
-6. **Mission Planner & Budgeting:** Outputs mission checklists and calculates funding requirements.
-7. **Blockchain Oracle:** Signs and commits the disaster audit log to the Sepolia smart contract (exclusive to verified `LIVE` alerts).
+## Key Design Principles
 
----
-
-## Tech Stack
-* **Backend:** Python 3.12, FastAPI, LangGraph, SQLAlchemy, Web3.py
-* **Frontend:** React 18, Vite, TailwindCSS, Zustand
-* **Database & Cache:** Aiven MySQL (prod) / SQLite (dev) + ChromaDB (Vector Search)
-* **Blockchain:** Hardhat, Solidity (Sepolia Testnet)
+| Principle | Implementation |
+|---|---|
+| **Full Stack Integration** | React Vite frontend seamlessly calls FastAPI endpoints and streams real-time SSE updates. |
+| **Deterministic routing** | Verification status drives every decision; LLM never controls flow |
+| **Schema safety** | Resource Agent normalises all LLM output — strings, dicts, mixed lists, null |
+| **Non-empty guarantees** | Mission Planner always returns tasks via built-in registries |
+| **Blockchain gate** | Web3/RPC/wallet initialised only when `verification_status == LIVE` |
+| **Singleton caches** | Embedding model, vector store, Web3 client loaded once and reused |
 
 ---
 
@@ -113,7 +145,7 @@ BACKEND_WALLET_PRIVATE_KEY=your_wallet_private_key
 ```bash
 # Create and activate virtual environment
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate  # Windows: .\.venv\Scripts\activate
 
 # Install dependencies and build RAG vector index
 pip install -r requirements.txt
@@ -125,20 +157,13 @@ python -m uvicorn backend.main:app --port 8000 --reload
 * Interactive API docs: **http://127.0.0.1:8000/docs**
 
 ### 3. Run Frontend (React)
+Open a new terminal window:
 ```bash
 cd Frontend
 npm install
 npm run dev
 ```
 * App URL: **http://localhost:5173**
-
----
-
-## Key Commands & Testing
-* **Run CLI Agent Demo:** `python scripts/demo.py`
-* **Run Python Tests:** `python -m pytest`
-* **Compile Contracts:** `cd blockchain && npx hardhat compile`
-* **Run Contract Tests:** `cd blockchain && npx hardhat test`
 
 ---
 
