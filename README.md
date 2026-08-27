@@ -2,6 +2,8 @@
 
 **AapdaSetu** is an autonomous multi-agent AI & Blockchain platform for real-time natural disaster intelligence, rapid resource deployment, and transparent relief coordination.
 
+> **Status:** The React frontend is now fully integrated with the FastAPI backend. Live disaster reports trigger real-time LLM pipelines (Gemini/Groq) for automated analysis.
+
 ---
 
 ## Key Features
@@ -124,7 +126,7 @@ python -m uvicorn backend.main:app --port 8000 --reload
 
 ### 3. Run Frontend (React)
 ```bash
-cd frontend
+cd Frontend
 npm install
 npm run dev
 ```
