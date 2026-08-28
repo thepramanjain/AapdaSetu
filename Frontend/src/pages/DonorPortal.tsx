@@ -79,12 +79,11 @@ export const DonorPortal: React.FC = () => {
         interactive={true}
       />
 
-      {/* ─── LIGHTWEIGHT AMBIENT MATRIX GRID ─── */}
+      {/* ─── LIGHTWEIGHT AMBIENT SOFT HAZE ─── */}
       <div
-        className="absolute inset-0 opacity-[0.035] pointer-events-none z-0"
+        className="absolute inset-0 opacity-20 pointer-events-none z-0"
         style={{
-          backgroundImage: 'radial-gradient(#0F172A 1.5px, transparent 1.5px)',
-          backgroundSize: '24px 24px',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(251,217,138,0.3) 0%, transparent 60%)',
         }}
       />
 
@@ -105,12 +104,11 @@ export const DonorPortal: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
         >
-          {/* Subtle grid overlay */}
+          {/* Subtle Ambient Sheen */}
           <div
-            className="absolute inset-0 opacity-10 pointer-events-none"
+            className="absolute inset-0 opacity-15 pointer-events-none"
             style={{
-              backgroundImage: 'radial-gradient(#FFF 1px, transparent 1px)',
-              backgroundSize: '20px 20px',
+              background: 'radial-gradient(ellipse at 70% 30%, rgba(255,255,255,0.25) 0%, transparent 60%)',
             }}
           />
 

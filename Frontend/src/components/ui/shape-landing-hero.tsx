@@ -93,7 +93,7 @@ function Map3DCard() {
         {/* Glowing Top Multi-Stop Gradient Accent */}
         <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-emerald-500 via-teal-400 to-amber-500" />
 
-        {/* Center Interactive Map Component (Enlarged & Sharp) */}
+        {/* Center Interactive Map Component */}
         <div className="relative w-full h-[520px] flex items-center justify-center p-1 my-auto">
           <IndiaInteractiveMap onSelectState={setSelectedState} />
         </div>
@@ -141,7 +141,7 @@ function Map3DCard() {
   );
 }
 
-// ─── Portals List ───────────────────────────────────────────────────
+// ─── Portals List (Frosted Transparent & Modern Accents) ───────────
 const portals = [
   {
     label: 'NGO Portal',
@@ -150,9 +150,10 @@ const portals = [
     icon: HeartHandshake,
     to: '/ngo/dashboard',
     accentColor: '#10B981',
-    gradient: 'linear-gradient(135deg, #064E3B 0%, #059669 60%, #10B981 100%)',
-    textColor: '#FFFFFF',
-    borderColor: 'rgba(16, 185, 129, 0.5)',
+    badgeBg: 'rgba(16, 185, 129, 0.18)',
+    badgeText: '#065F46',
+    hoverGlow: 'rgba(16, 185, 129, 0.35)',
+    borderColor: 'rgba(16, 185, 129, 0.45)',
   },
   {
     label: 'Gov Portal',
@@ -161,9 +162,10 @@ const portals = [
     icon: ShieldAlert,
     to: '/gov/dashboard',
     accentColor: '#2563EB',
-    gradient: 'linear-gradient(135deg, #1E3A8A 0%, #2563EB 60%, #3B82F6 100%)',
-    textColor: '#FFFFFF',
-    borderColor: 'rgba(59, 130, 246, 0.5)',
+    badgeBg: 'rgba(37, 99, 235, 0.18)',
+    badgeText: '#1E3A8A',
+    hoverGlow: 'rgba(37, 99, 235, 0.35)',
+    borderColor: 'rgba(59, 130, 246, 0.45)',
   },
   {
     label: 'Donor / Volunteer',
@@ -172,9 +174,10 @@ const portals = [
     icon: Zap,
     to: '/donor',
     accentColor: '#D97706',
-    gradient: 'linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D97706 100%)',
-    textColor: '#451A03',
-    borderColor: 'rgba(245, 158, 11, 0.5)',
+    badgeBg: 'rgba(217, 119, 6, 0.18)',
+    badgeText: '#78350F',
+    hoverGlow: 'rgba(245, 158, 11, 0.35)',
+    borderColor: 'rgba(245, 158, 11, 0.45)',
   },
 ];
 
@@ -272,13 +275,9 @@ export function HeroGeometric({
             )`,
           }}
         />
-        {/* Sun bloom left */}
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 16% 26%, rgba(255, 248, 200, 0.35) 0%, transparent 52%)' }} />
-        {/* Right soft sky */}
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 84% 14%, rgba(180, 225, 255, 0.12) 0%, transparent 48%)' }} />
-        {/* Bottom fade */}
         <div className="absolute bottom-0 inset-x-0 h-44" style={{ background: 'linear-gradient(180deg, transparent 0%, rgba(2, 16, 8, 0.7) 100%)' }} />
-        {/* Edge vignette */}
         <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 50% 50%, transparent 52%, rgba(0,0,0,0.32) 100%)' }} />
       </div>
 
@@ -286,7 +285,7 @@ export function HeroGeometric({
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-8 md:py-0">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-          {/* Left Column: Typography, Split Text & Portals */}
+          {/* Left Column: Typography, Black Shining Header & Transparent Portals */}
           <div className="lg:col-span-6 space-y-6 text-left">
 
             {/* Top Badges Row */}
@@ -312,35 +311,35 @@ export function HeroGeometric({
               <LiveAlertTicker />
             </motion.div>
 
-            {/* Brand Title with Letter Splitting Effect (High Contrast) */}
-            <div className="space-y-1">
+            {/* ─── BRAND TITLE & MAIN HEADLINE (PURE BLACK SHINING AESTHETIC) ─── */}
+            <div className="space-y-2">
               <div className="inline-block">
                 <SplitTextHeading
                   text="AapdaSetu"
-                  className="text-5xl sm:text-7xl font-black"
+                  className="text-5xl sm:text-7xl font-black tracking-tight font-display"
                   delay={0.1}
-                  highlightWords={['Setu']}
-                  defaultColorClassName="text-slate-900 drop-shadow-[0_2px_12px_rgba(255,255,255,0.95)]"
-                  highlightClassName="bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(255,255,255,0.95)]"
+                  highlightWords={['Setu', 'AapdaSetu']}
+                  defaultColorClassName="bg-gradient-to-b from-black via-slate-900 to-black bg-clip-text text-transparent drop-shadow-[0_2px_14px_rgba(255,255,255,0.95)]"
+                  highlightClassName="bg-gradient-to-r from-black via-[#0F172A] to-black bg-clip-text text-transparent drop-shadow-[0_2px_14px_rgba(255,255,255,0.95)]"
                 />
               </div>
 
-              {/* Main Headline with Split Text Words (High Contrast & Clear) */}
-              <div className="pt-2">
+              {/* Black Shining Headline */}
+              <div className="pt-1">
                 <SplitTextHeading
                   text="Disaster Intelligence & Relief Ecosystem"
-                  className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight"
+                  className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight font-display"
                   delay={0.2}
-                  highlightWords={['Intelligence', 'Relief']}
-                  defaultColorClassName="text-slate-900 drop-shadow-[0_2px_8px_rgba(255,255,255,0.95)]"
-                  highlightClassName="bg-gradient-to-r from-emerald-700 via-teal-700 to-amber-600 bg-clip-text text-transparent drop-shadow-[0_2px_8px_rgba(255,255,255,0.95)]"
+                  highlightWords={['Intelligence', 'Relief', 'Disaster', 'Ecosystem']}
+                  defaultColorClassName="bg-gradient-to-br from-black via-slate-800 to-black bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.95)]"
+                  highlightClassName="bg-gradient-to-br from-black via-[#1E293B] to-black bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.95)]"
                 />
               </div>
             </div>
 
-            {/* Luminous Subtitle Description */}
+            {/* Crisp High-Contrast Subtitle Description */}
             <motion.p
-              className="text-base sm:text-lg leading-relaxed font-semibold text-slate-800 max-w-xl drop-shadow-[0_1px_3px_rgba(255,255,255,0.95)]"
+              className="text-base sm:text-lg leading-relaxed font-bold text-slate-900 max-w-xl drop-shadow-[0_1px_4px_rgba(255,255,255,0.98)]"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -348,7 +347,7 @@ export function HeroGeometric({
               {description}
             </motion.p>
 
-            {/* ─── Redesigned Bottom Action Portal Cards Container ─── */}
+            {/* ─── 3 PORTAL CONTAINERS (FROSTED GLASS TRANSPARENT / TRANSLUCENT AESTHETIC) ─── */}
             <motion.div
               className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2"
               initial={{ opacity: 0, y: 20 }}
@@ -369,30 +368,28 @@ export function HeroGeometric({
                   >
                     <Link
                       to={portal.to}
-                      className="flex flex-col justify-between p-4 sm:p-4.5 rounded-2xl transition-all h-full relative overflow-hidden shadow-lg hover:shadow-2xl"
+                      className="flex flex-col justify-between p-4 sm:p-4.5 rounded-2xl transition-all h-full relative overflow-hidden backdrop-blur-2xl shadow-lg hover:shadow-2xl"
                       style={{
-                        background: portal.gradient,
-                        color: portal.textColor,
+                        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(245, 250, 248, 0.55) 100%)',
                         border: `1.5px solid ${portal.borderColor}`,
-                        boxShadow: `0 12px 28px -6px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.35)`,
+                        boxShadow: `0 12px 30px -8px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9)`,
                       }}
                     >
                       {/* Top Row: Icon & Pill Badge */}
                       <div className="flex items-center justify-between mb-2.5">
                         <div
-                          className="h-9 w-9 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110"
+                          className="h-9 w-9 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110 shadow-xs border border-white/80"
                           style={{
-                            background: 'rgba(255, 255, 255, 0.22)',
-                            boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.4)',
+                            background: portal.badgeBg,
                           }}
                         >
-                          <Icon className="h-5 w-5" style={{ color: portal.textColor }} />
+                          <Icon className="h-5 w-5" style={{ color: portal.accentColor }} />
                         </div>
                         <span
-                          className="text-[9px] font-mono font-black uppercase px-2 py-0.5 rounded-md"
+                          className="text-[9px] font-mono font-black uppercase px-2 py-0.5 rounded-md border border-white/60 shadow-xs"
                           style={{
-                            background: 'rgba(0, 0, 0, 0.18)',
-                            color: portal.textColor,
+                            background: portal.badgeBg,
+                            color: portal.badgeText,
                           }}
                         >
                           {portal.badge}
@@ -402,18 +399,17 @@ export function HeroGeometric({
                       {/* Content & Arrow */}
                       <div className="flex items-end justify-between">
                         <div>
-                          <div className="text-base font-black leading-tight" style={{ color: portal.textColor }}>
+                          <div className="text-base font-black leading-tight text-slate-900">
                             {portal.label}
                           </div>
-                          <div className="text-xs font-semibold opacity-95 mt-0.5" style={{ color: portal.textColor }}>
+                          <div className="text-xs font-semibold text-slate-600 mt-0.5">
                             {portal.desc}
                           </div>
                         </div>
                         <div
-                          className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0 ml-1.5 group-hover:translate-x-1.5 transition-transform"
-                          style={{ background: 'rgba(255, 255, 255, 0.25)' }}
+                          className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0 ml-1.5 group-hover:translate-x-1.5 transition-transform bg-white/80 shadow-xs border border-slate-200"
                         >
-                          <ArrowRight className="h-3.5 w-3.5" style={{ color: portal.textColor }} />
+                          <ArrowRight className="h-3.5 w-3.5" style={{ color: portal.accentColor }} />
                         </div>
                       </div>
                     </Link>

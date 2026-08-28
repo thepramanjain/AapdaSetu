@@ -110,31 +110,30 @@ export const PortalLayout: React.FC<PortalLayoutProps> = ({ children }) => {
         interactive={true}
       />
 
-      {/* ─── MODERN CLEAN AMBIENT BACKGROUND (CSS Mesh & Matrix Grid) ─── */}
+      {/* ─── MODERN CLEAN AMBIENT BACKGROUND (Light Soft Ambient Haze) ─── */}
       <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
         {/* Soft Radial Ambient Lighting */}
         <div
-          className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full opacity-60 blur-3xl"
+          className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full opacity-40 blur-3xl"
           style={{
             background: isGov
-              ? 'radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%)'
-              : 'radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%)',
+              ? 'radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%)'
+              : 'radial-gradient(circle, rgba(16, 185, 129, 0.12) 0%, transparent 70%)',
           }}
         />
         <div
-          className="absolute -bottom-32 -right-32 w-[600px] h-[600px] rounded-full opacity-60 blur-3xl"
+          className="absolute -bottom-32 -right-32 w-[600px] h-[600px] rounded-full opacity-40 blur-3xl"
           style={{
             background: isGov
-              ? 'radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%)'
-              : 'radial-gradient(circle, rgba(20, 184, 166, 0.14) 0%, transparent 70%)',
+              ? 'radial-gradient(circle, rgba(99, 102, 241, 0.09) 0%, transparent 70%)'
+              : 'radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, transparent 70%)',
           }}
         />
-        {/* Subtle geometric dot grid pattern */}
+        {/* Soft Top Glow Light Haze */}
         <div
-          className="absolute inset-0 opacity-[0.035]"
+          className="absolute inset-0 opacity-25"
           style={{
-            backgroundImage: `radial-gradient(#0F172A 1.5px, transparent 1.5px)`,
-            backgroundSize: '24px 24px',
+            background: 'radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.8) 0%, transparent 60%)',
           }}
         />
       </div>

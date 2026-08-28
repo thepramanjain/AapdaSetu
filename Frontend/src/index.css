@@ -294,8 +294,7 @@
 
 /* React Flow custom panel styling */
 .react-flow__renderer {
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.12) 1px, transparent 1px) !important;
-  background-size: 24px 24px !important;
+  background: rgba(248, 250, 252, 0.8) !important;
 }
 
 .react-flow__handle {
