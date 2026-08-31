@@ -97,7 +97,7 @@ import os
 
 frontend_dist = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend", "dist")
 if os.path.exists(frontend_dist):
-    app_logger.info(f"Frontend: Found built assets at {frontend_dist}. Mounting frontend static handlers.")
+    app_logger.info(f"frontend: Found built assets at {frontend_dist}. Mounting frontend static handlers.")
     app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist, "assets")), name="frontend-static")
     
     @app.get("/{catchall:path}")
