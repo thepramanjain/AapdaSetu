@@ -51,7 +51,7 @@ class Settings(BaseSettings):
     PRIMARY_LLM: str = "llama-3.3-70b-versatile"
     GEMINI_MODEL: str = "gemini-2.5-flash"
     EMBEDDING_PROVIDER: str = Field(default="gemini", description="Embedding provider (gemini, huggingface)")
-    EMBEDDING_MODEL: str = "models/embedding-001"  # Google Gemini Embedding model
+    EMBEDDING_MODEL: str = "models/gemini-embedding-001"  # Google Gemini Embedding model
     
     model_config = SettingsConfigDict(
         env_file=".env",
