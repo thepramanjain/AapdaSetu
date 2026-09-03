@@ -267,9 +267,13 @@ export const LandingPage: React.FC = () => {
         badge="Autonomous AI & Blockchain Suite"
       />
 
-      {/* ─── Lower Sections with Interactive 3D WebGL Three.js Wave Background ─── */}
-      <div className="relative">
-        <ThreeInteractiveWave className="opacity-70" />
+      {/* ─── Lower Sections Background (Clean, Soft & Modern Gradient) ─── */}
+      <div className="relative bg-gradient-to-b from-transparent via-slate-100/40 to-slate-200/50">
+        {/* Subtle Ambient Radial Lighting without dots */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full bg-emerald-100/30 blur-[130px]" />
+          <div className="absolute top-96 right-10 w-[600px] h-[600px] rounded-full bg-cyan-100/25 blur-[140px]" />
+        </div>
 
         {/* ─── STAT CARDS (Enlarged & Rich 3D Hover Effects Matching Screenshot 2) ─── */}
         <section className="mx-auto max-w-7xl px-4 sm:px-6 pt-16 pb-12 relative z-20">
@@ -314,8 +318,25 @@ export const LandingPage: React.FC = () => {
                     </div>
                   </div>
 
-                  {/* Card Container - Bigger Size & Luxury Shadow */}
-                  <div className="w-full bg-white rounded-3xl p-7 pt-12 text-left border border-slate-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.06)] group-hover:shadow-[0_22px_50px_rgba(0,0,0,0.12)] group-hover:border-slate-300 transition-all duration-400 flex flex-col justify-between min-h-[210px]">
+                  {/* Card Container - Bigger Size & Luxury Gradient Background */}
+                  <div
+                    className="w-full rounded-3xl p-7 pt-12 text-left border transition-all duration-400 flex flex-col justify-between min-h-[215px] relative overflow-hidden group-hover:-translate-y-2 group-hover:scale-[1.02]"
+                    style={{
+                      background: [
+                        'linear-gradient(155deg, #FFFFFF 0%, #FFF7ED 50%, #FFEDD5 100%)',
+                        'linear-gradient(155deg, #FFFFFF 0%, #F0FDF4 50%, #DCFCE7 100%)',
+                        'linear-gradient(155deg, #FFFFFF 0%, #FAF5FF 50%, #F3E8FF 100%)',
+                        'linear-gradient(155deg, #FFFFFF 0%, #FEFCE8 50%, #FEF08A 100%)',
+                      ][i % 4],
+                      borderColor: [
+                        'rgba(251, 146, 60, 0.45)',
+                        'rgba(52, 211, 153, 0.45)',
+                        'rgba(192, 132, 252, 0.45)',
+                        'rgba(250, 204, 21, 0.45)',
+                      ][i % 4],
+                      boxShadow: '0 14px 38px -10px rgba(0,0,0,0.08), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+                    }}
+                  >
                     <div>
                       <span className="text-[11px] font-mono font-black uppercase tracking-widest text-slate-500 block mb-1">
                         {card.label}
@@ -327,12 +348,12 @@ export const LandingPage: React.FC = () => {
                           card.value
                         )}
                       </div>
-                      <div className="text-xs sm:text-sm font-semibold text-slate-500 mt-1">
+                      <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-1">
                         {card.sub}
                       </div>
                     </div>
 
-                    <div className="mt-5 pt-3.5 border-t border-slate-100 flex items-center justify-between">
+                    <div className="mt-5 pt-3.5 border-t border-slate-200/80 flex items-center justify-between">
                       {card.link ? (
                         <Link
                           to={card.link}
@@ -435,11 +456,13 @@ export const LandingPage: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Card Container - Bigger Size & Luxury Shadow */}
+                {/* Card Container - Bigger Size & Luxury Gradient Background */}
                 <div
-                  className="w-full bg-white rounded-3xl p-7 pt-12 text-left border border-slate-200/80 shadow-[0_8px_30px_rgba(0,0,0,0.06)] group-hover/card:shadow-[0_22px_50px_rgba(0,0,0,0.14)] group-hover/card:-translate-y-2.5 group-hover/card:scale-[1.02] group-hover/card:border-slate-300 transition-all duration-400 min-h-[190px] flex flex-col justify-between"
+                  className="w-full rounded-3xl p-7 pt-12 text-left border transition-all duration-400 min-h-[195px] flex flex-col justify-between group-hover/card:-translate-y-2.5 group-hover/card:scale-[1.02]"
                   style={{
-                    boxShadow: `0 8px 30px rgba(0,0,0,0.05)`,
+                    background: `linear-gradient(155deg, #FFFFFF 0%, #F8FAFC 55%, ${step.color}15 100%)`,
+                    borderColor: `${step.color}35`,
+                    boxShadow: `0 12px 34px -8px ${step.color}25, inset 0 2px 4px rgba(255, 255, 255, 0.95)`,
                   }}
                 >
                   <div>
@@ -517,8 +540,15 @@ export const LandingPage: React.FC = () => {
               </div>
             </div>
 
-            {/* White Card Body with Curved Corners */}
-            <div className="w-full bg-white rounded-3xl p-8 pt-14 text-left border border-slate-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.06)] group-hover:shadow-[0_22px_50px_rgba(0,0,0,0.12)] group-hover:border-slate-300 transition-all duration-400 min-h-[240px] flex flex-col justify-start">
+            {/* Card Body with Curved Corners & Gradient Background */}
+            <div
+              className="w-full rounded-3xl p-8 pt-14 text-left border transition-all duration-400 min-h-[240px] flex flex-col justify-start group-hover:-translate-y-2"
+              style={{
+                background: 'linear-gradient(155deg, #FFFFFF 0%, #F5FBF6 55%, #E6F4E8 100%)',
+                borderColor: 'rgba(52, 211, 153, 0.45)',
+                boxShadow: '0 14px 38px -10px rgba(16, 185, 129, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+              }}
+            >
               <h4 className="font-display font-black text-xl text-slate-900 mb-2">
                 Airdrop Dispatch
               </h4>
@@ -550,8 +580,15 @@ export const LandingPage: React.FC = () => {
               </div>
             </div>
 
-            {/* White Card Body with Curved Corners */}
-            <div className="w-full bg-white rounded-3xl p-8 pt-14 text-left border border-slate-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.06)] group-hover:shadow-[0_22px_50px_rgba(0,0,0,0.12)] group-hover:border-slate-300 transition-all duration-400 min-h-[240px] flex flex-col justify-start">
+            {/* Card Body with Curved Corners & Gradient Background */}
+            <div
+              className="w-full rounded-3xl p-8 pt-14 text-left border transition-all duration-400 min-h-[240px] flex flex-col justify-start group-hover:-translate-y-2"
+              style={{
+                background: 'linear-gradient(155deg, #FFFFFF 0%, #F8FAFC 55%, #EFF6FF 100%)',
+                borderColor: 'rgba(96, 165, 250, 0.45)',
+                boxShadow: '0 14px 38px -10px rgba(59, 130, 246, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+              }}
+            >
               <h4 className="font-display font-black text-xl text-slate-900 mb-2">
                 Live Incident Grid
               </h4>
@@ -587,8 +624,15 @@ export const LandingPage: React.FC = () => {
               </div>
             </div>
 
-            {/* White Card Body with Curved Corners */}
-            <div className="w-full bg-white rounded-3xl p-8 pt-14 text-left border border-slate-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.06)] group-hover:shadow-[0_22px_50px_rgba(0,0,0,0.12)] group-hover:border-slate-300 transition-all duration-400 min-h-[240px] flex flex-col justify-start">
+            {/* Card Body with Curved Corners & Gradient Background */}
+            <div
+              className="w-full rounded-3xl p-8 pt-14 text-left border transition-all duration-400 min-h-[240px] flex flex-col justify-start group-hover:-translate-y-2"
+              style={{
+                background: 'linear-gradient(155deg, #FFFFFF 0%, #FAF5FF 55%, #F3E8FF 100%)',
+                borderColor: 'rgba(192, 132, 252, 0.45)',
+                boxShadow: '0 14px 38px -10px rgba(168, 85, 247, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+              }}
+            >
               <h4 className="font-display font-black text-xl text-slate-900 mb-2">
                 AI Disaster Triage
               </h4>
@@ -619,8 +663,15 @@ export const LandingPage: React.FC = () => {
               </div>
             </div>
 
-            {/* White Card Body with Curved Corners */}
-            <div className="w-full bg-white rounded-3xl p-8 pt-14 text-left border border-slate-200/80 shadow-[0_10px_35px_rgba(0,0,0,0.06)] group-hover:shadow-[0_22px_50px_rgba(0,0,0,0.12)] group-hover:border-slate-300 transition-all duration-400 min-h-[240px] flex flex-col justify-start">
+            {/* Card Body with Curved Corners & Gradient Background */}
+            <div
+              className="w-full rounded-3xl p-8 pt-14 text-left border transition-all duration-400 min-h-[240px] flex flex-col justify-start group-hover:-translate-y-2"
+              style={{
+                background: 'linear-gradient(155deg, #FFFFFF 0%, #FEFCE8 55%, #FEF08A 100%)',
+                borderColor: 'rgba(250, 204, 21, 0.45)',
+                boxShadow: '0 14px 38px -10px rgba(234, 179, 8, 0.12), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+              }}
+            >
               <h4 className="font-display font-black text-xl text-slate-900 mb-2">
                 Instant On-Chain Release
               </h4>

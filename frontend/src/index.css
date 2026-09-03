@@ -465,3 +465,145 @@
   background: radial-gradient(ellipse at center, rgba(16,185,129,0.12) 0%, transparent 70%);
   pointer-events: none;
 }
+
+/* ═══════════════════════════════════════════════
+   PORTAL CARD — Professional Clean Hover
+═══════════════════════════════════════════════ */
+.portal-card {
+  transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.portal-card:hover {
+  background: var(--portal-hover-bg, rgba(245, 255, 250, 0.96)) !important;
+  box-shadow: 0 6px 20px -4px rgba(0,0,0,0.1) !important;
+}
+
+/* ═══════════════════════════════════════════════
+   FOOTER LINK HOVER — Rich Gradient Underline + Glow
+═══════════════════════════════════════════════ */
+.footer-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.25s ease, transform 0.25s ease, letter-spacing 0.3s ease;
+  cursor: pointer;
+}
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #10B981, #06B6D4, #F59E0B);
+  transition: width 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+}
+.footer-link:hover::after {
+  width: 100%;
+}
+.footer-link:hover {
+  color: #059669;
+  transform: translateX(4px);
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.2);
+}
+
+.footer-link-blue:hover {
+  color: #2563EB;
+  text-shadow: 0 0 12px rgba(37, 99, 235, 0.2);
+}
+.footer-link-blue::after {
+  background: linear-gradient(90deg, #2563EB, #6366F1, #8B5CF6);
+}
+
+.footer-link-red:hover {
+  color: #DC2626;
+  text-shadow: 0 0 12px rgba(220, 38, 38, 0.2);
+}
+.footer-link-red::after {
+  background: linear-gradient(90deg, #DC2626, #F97316, #EF4444);
+}
+
+/* Section heading underline sweep + letter-spacing expand */
+.footer-heading {
+  position: relative;
+  display: inline-block;
+  transition: letter-spacing 0.35s ease, color 0.3s ease;
+}
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(16,185,129,0.7), rgba(6,182,212,0.5), transparent);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 9999px;
+}
+.footer-heading:hover::after {
+  transform: scaleX(1);
+}
+.footer-heading:hover {
+  letter-spacing: 0.08em;
+  color: #334155;
+}
+
+/* ═══════════════════════════════════════════════
+   GLOBAL RESPONSIVE & MOBILE SMOOTH
+═══════════════════════════════════════════════ */
+
+/* Prevent horizontal scroll on all screens */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+/* Touch-action smooth scrolling */
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: pan-y;
+}
+
+/* Fluid images */
+img, video, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile font scaling */
+@media (max-width: 480px) {
+  html { font-size: 15px; }
+}
+
+/* Responsive grid safeguard */
+.grid {
+  min-width: 0;
+}
+.grid > * {
+  min-width: 0;
+}
+
+/* Responsive hero map card */
+@media (max-width: 1024px) {
+  .map-card-wrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+/* Smooth GPU-accelerated scroll */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Overflow text safeguard */
+.truncate-safe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+}

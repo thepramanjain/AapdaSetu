@@ -172,28 +172,22 @@ export const Dashboard: React.FC = () => {
 
       {/* Charts Panels */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        
-        {/* Trend Chart */}
+           {/* Trend Chart */}
         <div 
-          className="rounded-3xl p-6 space-y-4 lg:col-span-2"
-          style={{
-            backgroundColor: '#E4E9F2',
-            boxShadow: '8px 8px 20px #b8c4d9, -8px -8px 20px #ffffff',
-            border: '1px solid rgba(255, 255, 255, 0.7)',
-          }}
+          className="rounded-2xl p-6 space-y-4 lg:col-span-2 bg-white border border-slate-200/90 shadow-xs"
         >
-          <div className="flex justify-between items-center pb-3 border-b border-slate-300/60">
-            <h3 className="text-xs font-mono font-black uppercase tracking-wider text-slate-700">7-Day Disaster Activity Velocity</h3>
-            <span className="inline-flex items-center gap-1 text-xs text-emerald-800 font-mono font-black">
+          <div className="flex justify-between items-center pb-3 border-b border-slate-100">
+            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">7-Day Disaster Activity Velocity</h3>
+            <span className="inline-flex items-center gap-1 text-xs text-emerald-700 font-mono font-bold bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
               <TrendingUp className="h-3 w-3" /> +15% telemetry
             </span>
           </div>
           <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
               <LineChart data={trendData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#cbd5e1" vertical={false} />
-                <XAxis dataKey="name" stroke="#64748b" fontSize={11} fontWeight={700} tickLine={false} axisLine={false} dy={10} />
-                <YAxis stroke="#64748b" fontSize={11} fontWeight={700} tickLine={false} axisLine={false} dx={-5} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
+                <XAxis dataKey="name" stroke="#64748b" fontSize={11} fontWeight={600} tickLine={false} axisLine={false} dy={10} />
+                <YAxis stroke="#64748b" fontSize={11} fontWeight={600} tickLine={false} axisLine={false} dx={-5} />
                 <Tooltip 
                   contentStyle={{ 
                     backgroundColor: 'rgba(15, 23, 42, 0.95)', 
@@ -204,7 +198,7 @@ export const Dashboard: React.FC = () => {
                   }}
                   itemStyle={{ color: '#34d399', fontWeight: 'bold' }}
                 />
-                <Line type="monotone" dataKey="Incidents" stroke="#059669" strokeWidth={3.5} dot={{ stroke: '#059669', strokeWidth: 2, r: 4, fill: '#fff' }} activeDot={{ r: 7, fill: '#10b981' }} />
+                <Line type="monotone" dataKey="Incidents" stroke="#059669" strokeWidth={3} dot={{ stroke: '#059669', strokeWidth: 2, r: 4, fill: '#fff' }} activeDot={{ r: 6, fill: '#10b981' }} />
               </LineChart>
             </ResponsiveContainer>
           </div>
@@ -212,80 +206,27 @@ export const Dashboard: React.FC = () => {
 
         {/* Risk Distribution Chart */}
         <div 
-          className="rounded-3xl p-6 space-y-4"
-          style={{
-            backgroundColor: '#E4E9F2',
-            boxShadow: '8px 8px 20px #b8c4d9, -8px -8px 20px #ffffff',
-            border: '1px solid rgba(255, 255, 255, 0.7)',
-          }}
+          className="rounded-2xl p-6 space-y-4 bg-white border border-slate-200/90 shadow-xs"
         >
-          <div className="pb-3 border-b border-slate-300/60">
-            <h3 className="text-xs font-mono font-black uppercase tracking-wider text-slate-700">Risk Severity Spread</h3>
+          <div className="pb-3 border-b border-slate-100">
+            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">Risk Severity Spread</h3>
           </div>
           <div className="h-64 w-full flex flex-col justify-center items-center">
-            {riskData.length > 0 ? (
-              <ResponsiveContainer width="100%" height="80%">
-                <PieChart>
-                  <Pie
-                    data={riskData}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={60}
-                    outerRadius={80}
-                    paddingAngle={4}
-                    dataKey="value"
-                    isAnimationActive={true}
-                  >
-                    {riskData.map((entry, index) => (
-                      <Cell key={`cell-${index}`} fill={entry.color} stroke="rgba(255, 255, 255, 0.8)" strokeWidth={2} />
-                    ))}
-                  </Pie>
-                  <Tooltip 
-                    contentStyle={{ 
-                      backgroundColor: 'rgba(15, 23, 42, 0.95)', 
-                      borderRadius: '12px',
-                      color: '#fff',
-                    }}
-                  />
-                </PieChart>
-              </ResponsiveContainer>
-            ) : (
-              <div className="text-xs text-slate-400 font-medium italic">No severity data</div>
-            )}
-            <div className="flex flex-wrap gap-3 text-xs font-bold mt-2 justify-center">
-              {riskData.map((d, i) => (
-                <div key={i} className="flex items-center gap-1.5">
-                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: d.color }} />
-                  <span className="text-slate-700 text-[11px] font-mono">{d.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Funding Bar Chart */}
-        <div 
-          className="rounded-3xl p-6 space-y-4 lg:col-span-3"
-          style={{
-            backgroundColor: '#E4E9F2',
-            boxShadow: '8px 8px 20px #b8c4d9, -8px -8px 20px #ffffff',
-            border: '1px solid rgba(255, 255, 255, 0.7)',
-          }}
-        >
-          <div className="pb-3 border-b border-slate-300/60 flex items-center justify-between">
-            <h3 className="text-xs font-mono font-black uppercase tracking-wider text-slate-700">
-              NGO Funding Tranches (INR Lakhs)
-            </h3>
-            <span className="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-100/70 px-2.5 py-0.5 rounded-full border border-emerald-300">
-              Zero-Knowledge Verified
-            </span>
-          </div>
-          <div className="h-64 w-full">
             <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={fundingData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#cbd5e1" vertical={false} />
-                <XAxis dataKey="name" stroke="#64748b" fontSize={11} fontWeight={700} tickLine={false} axisLine={false} dy={10} />
-                <YAxis stroke="#64748b" fontSize={11} fontWeight={700} tickLine={false} axisLine={false} dx={-5} />
+              <PieChart>
+                <Pie
+                  data={severityData}
+                  cx="50%"
+                  cy="50%"
+                  innerRadius={55}
+                  outerRadius={80}
+                  paddingAngle={5}
+                  dataKey="value"
+                >
+                  {severityData.map((entry, index) => (
+                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                  ))}
+                </Pie>
                 <Tooltip 
                   contentStyle={{ 
                     backgroundColor: 'rgba(15, 23, 42, 0.95)', 
@@ -293,53 +234,107 @@ export const Dashboard: React.FC = () => {
                     color: '#fff',
                   }}
                 />
-                <Legend wrapperStyle={{ fontSize: 11, fontWeight: 700, paddingTop: 10 }} />
-                <Bar dataKey="Requested" fill="#f59e0b" radius={[6, 6, 0, 0]} maxBarSize={40} />
-                <Bar dataKey="Approved" fill="#10b981" radius={[6, 6, 0, 0]} maxBarSize={40} />
+                <Legend wrapperStyle={{ fontSize: 11, fontWeight: 600 }} />
+              </PieChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Funding Bar Chart (Bento Box - 7 cols) */}
+        <div 
+          className="rounded-2xl p-6 space-y-4 lg:col-span-7 bg-white border border-slate-200/90 shadow-xs flex flex-col justify-between"
+        >
+          <div className="pb-3 border-b border-slate-100 flex items-center justify-between">
+            <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-slate-700">
+              NGO Funding Tranches (INR Lakhs)
+            </h3>
+            <span className="text-[10px] font-mono text-emerald-800 font-bold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+              Zero-Knowledge Verified
+            </span>
+          </div>
+          <div className="h-60 w-full">
+            <ResponsiveContainer width="100%" height="100%">
+              <BarChart data={fundingData} margin={{ top: 5, right: 10, left: -20, bottom: 5 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" vertical={false} />
+                <XAxis dataKey="name" stroke="#64748b" fontSize={11} fontWeight={600} tickLine={false} axisLine={false} dy={10} />
+                <YAxis stroke="#64748b" fontSize={11} fontWeight={600} tickLine={false} axisLine={false} dx={-5} />
+                <Tooltip 
+                  contentStyle={{ 
+                    backgroundColor: 'rgba(15, 23, 42, 0.95)', 
+                    borderRadius: '12px',
+                    color: '#fff',
+                  }}
+                />
+                <Legend wrapperStyle={{ fontSize: 11, fontWeight: 600, paddingTop: 6 }} />
+                <Bar dataKey="Requested" fill="#f59e0b" radius={[6, 6, 0, 0]} maxBarSize={36} />
+                <Bar dataKey="Approved" fill="#10b981" radius={[6, 6, 0, 0]} maxBarSize={36} />
               </BarChart>
             </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* AI Autonomous Telemetry (Bento Box - 5 cols) */}
+        <div className="rounded-2xl p-6 space-y-4 lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-white border border-slate-800 shadow-sm flex flex-col justify-between">
+          <div className="flex items-center justify-between pb-3 border-b border-white/10">
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
+              <h3 className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-300">
+                AI Autonomous Telemetry
+              </h3>
+            </div>
+            <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              99.8% Online
+            </span>
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 py-1">
+            <div className="p-3 rounded-xl bg-white/[0.05] border border-white/10">
+              <span className="text-[10px] font-mono text-slate-400 block uppercase">Early Warning Speed</span>
+              <span className="text-xl font-black text-emerald-400 font-mono">90 Sec</span>
+              <span className="text-[10px] text-slate-400 block">NDMA Satellite sync</span>
+            </div>
+            <div className="p-3 rounded-xl bg-white/[0.05] border border-white/10">
+              <span className="text-[10px] font-mono text-slate-400 block uppercase">Active Tranche Vault</span>
+              <span className="text-xl font-black text-amber-400 font-mono">100%</span>
+              <span className="text-[10px] text-slate-400 block">Polygon Proof of Relief</span>
+            </div>
+          </div>
+
+          <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-between text-xs">
+            <div className="flex items-center gap-2 text-emerald-300 font-semibold">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
+              </span>
+              <span>Crisis Escalation Node #04 Active</span>
+            </div>
+            <span className="text-[10px] font-mono text-slate-400">Assam / Odisha</span>
           </div>
         </div>
       </div>
 
       {/* Active Disaster Table */}
       <div 
-        className="rounded-3xl overflow-hidden p-6 space-y-4"
-        style={{
-          backgroundColor: '#E4E9F2',
-          boxShadow: '10px 10px 24px #b8c4d9, -10px -10px 24px #ffffff',
-          border: '1.5px solid rgba(255, 255, 255, 0.8)',
-        }}
+        className="rounded-2xl overflow-hidden p-6 space-y-4 bg-white border border-slate-200/90 shadow-xs"
       >
-        <div className="pb-4 border-b border-slate-300/60 flex items-center justify-between">
+        <div className="pb-4 border-b border-slate-100 flex items-center justify-between">
           <div>
             <h3 className="font-display font-black text-lg text-slate-900">National Live Crisis Registry</h3>
             <p className="text-xs text-slate-500 font-mono">Real-time multisensor alerts across 36 States and Union Territories</p>
           </div>
-          <span 
-            className="text-xs font-mono font-black text-emerald-800 px-3 py-1 rounded-full"
-            style={{
-              backgroundColor: '#E4E9F2',
-              boxShadow: 'inset 2px 2px 4px #b8c4d9, inset -2px -2px 4px #ffffff',
-            }}
-          >
+          <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">
             {disasters.length} Monitored Events
           </span>
         </div>
 
-        <div className="grid gap-3.5">
+        <div className="grid gap-3">
           {disasters.map((d) => (
             <motion.div 
               key={d.id} 
-              whileHover={{ y: -3, scale: 1.01 }}
+              whileHover={{ y: -2 }}
               whileTap={{ scale: 0.99 }}
               onClick={() => handleRowClick(d.id)}
-              className="p-5 rounded-2xl flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all cursor-pointer"
-              style={{
-                backgroundColor: '#FFFFFF',
-                boxShadow: '4px 4px 10px #b8c4d9, -4px -4px 10px #ffffff',
-                border: '1px solid rgba(255, 255, 255, 0.7)',
-              }}
+              className="p-4 sm:p-5 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-4 transition-all cursor-pointer bg-slate-50/70 border border-slate-200/80 hover:border-slate-300 hover:bg-slate-50 shadow-xs"
             >
               <div className="space-y-1">
                 <div className="flex items-center gap-2">

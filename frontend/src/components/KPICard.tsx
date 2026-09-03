@@ -25,9 +25,9 @@ export const KPICard: React.FC<KPICardProps> = ({
       transition={{ duration: 0.35, ease: 'easeOut' }}
       className="p-7 rounded-3xl flex flex-col justify-between relative overflow-hidden transition-all select-none group cursor-pointer"
       style={{
-        backgroundColor: '#E4E9F2',
-        boxShadow: '10px 10px 24px #b8c4d9, -10px -10px 24px #ffffff',
-        border: '1.5px solid rgba(255, 255, 255, 0.85)',
+        background: 'linear-gradient(155deg, #FFFFFF 0%, #F8FAFC 55%, #EDF2F7 100%)',
+        boxShadow: '0 14px 35px -10px rgba(15, 23, 42, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+        border: '1.5px solid rgba(226, 232, 240, 0.8)',
       }}
     >
       <div className="flex justify-between items-start gap-4">
@@ -38,15 +38,16 @@ export const KPICard: React.FC<KPICardProps> = ({
           </h3>
         </div>
 
-        {/* Neumorphic Inset Debossed Icon Box with Hover Glow */}
+        {/* Floating Gradient Icon Box */}
         <div
           className="h-13 w-13 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-sm"
           style={{
-            backgroundColor: '#E4E9F2',
-            boxShadow: 'inset 4px 4px 8px #b8c4d9, inset -4px -4px 8px #ffffff',
+            background: `linear-gradient(135deg, ${accentColor}25 0%, ${accentColor}10 100%)`,
+            border: `1px solid ${accentColor}40`,
+            boxShadow: `0 4px 14px ${accentColor}25`,
           }}
         >
-          <Icon className="h-6 w-6 text-emerald-700 transition-transform duration-300 group-hover:rotate-6" style={{ color: accentColor }} />
+          <Icon className="h-6 w-6 transition-transform duration-300 group-hover:rotate-6" style={{ color: accentColor }} />
         </div>
       </div>
 

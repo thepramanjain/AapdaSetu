@@ -37,11 +37,11 @@ function LiveAlertTicker() {
         transition={{ duration: 0.35 }}
         className="flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold"
         style={{
-          background: 'rgba(255, 255, 255, 0.92)',
-          border: '1px solid rgba(16, 185, 129, 0.5)',
-          boxShadow: '0 4px 20px rgba(6, 78, 59, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
+          background: 'rgba(255, 255, 255, 0.95)',
+          border: '1.5px solid rgba(16, 185, 129, 0.5)',
+          boxShadow: '0 6px 20px rgba(6, 78, 59, 0.16), inset 0 1px 0 rgba(255, 255, 255, 1)',
           color: '#064E3B',
-          backdropFilter: 'blur(12px)',
+          backdropFilter: 'blur(16px)',
         }}
       >
         <span className="relative flex h-2 w-2">
@@ -54,47 +54,72 @@ function LiveAlertTicker() {
   );
 }
 
-// ─── Large High-Definition 3D Satellite Map Card ─────────────
-function Map3DCard() {
-  const rotateX = useSpring(useMotionValue(0), { stiffness: 120, damping: 22 });
-  const rotateY = useSpring(useMotionValue(0), { stiffness: 120, damping: 22 });
-  const [selectedState, setSelectedState] = useState<string | null>(null);
+// ─── Aceternity UI Text Animation with Pulsing Cursor Pill (from screenshot) ─────
+function HeroTypewriterText() {
+  const words = [
+    "Relief Ecosystem",
+    "Autonomous AI",
+    "On-Chain Grants",
+    "90s Drone Triage",
+    "National Defense",
+  ];
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2;
-    const cy = rect.top + rect.height / 2;
-    const dx = (e.clientX - cx) / (rect.width / 2);
-    const dy = (e.clientY - cy) / (rect.height / 2);
-    rotateX.set(-dy * 4.5);
-    rotateY.set(dx * 4.5);
-  };
+  const [wordIdx, setWordIdx] = useState(0);
+  const [subIdx, setSubIdx] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
 
-  const handleMouseLeave = () => {
-    rotateX.set(0);
-    rotateY.set(0);
-  };
+  useEffect(() => {
+    const currentWord = words[wordIdx];
+
+    if (!isDeleting && subIdx === currentWord.length) {
+      const timeout = setTimeout(() => setIsDeleting(true), 1800);
+      return () => clearTimeout(timeout);
+    }
+
+    if (isDeleting && subIdx === 0) {
+      setIsDeleting(false);
+      setWordIdx((prev) => (prev + 1) % words.length);
+      return;
+    }
+
+    const speed = isDeleting ? 45 : 90;
+    const timeout = setTimeout(() => {
+      setSubIdx((prev) => prev + (isDeleting ? -1 : 1));
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [subIdx, isDeleting, wordIdx]);
 
   return (
-    <motion.div
-      className="w-full max-w-[650px] min-h-[580px] relative select-none"
-      style={{ perspective: '1400px', rotateX, rotateY }}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-    >
+    <span className="inline-flex items-center flex-wrap">
+      <span className="bg-gradient-to-br from-black via-slate-800 to-black bg-clip-text text-transparent">
+        {words[wordIdx].substring(0, subIdx)}
+      </span>
+      {/* Animated Cursor Pill (Exact Aceternity UI Style from Screenshot) */}
+      <span className="inline-block w-2.5 h-6 sm:w-3 sm:h-8 md:w-3.5 md:h-10 bg-rose-500 rounded-sm ml-1.5 align-middle animate-pulse shadow-[0_0_12px_rgba(244,63,94,0.6)]" />
+    </span>
+  );
+}
+
+// ─── Large Satellite Map Card (No 3D, Clean Professional) ─────────────
+function Map3DCard() {
+  const [selectedState, setSelectedState] = useState<string | null>(null);
+
+  return (
+    <div className="w-full max-w-[640px] relative select-none">
       <div
-        className="p-5 sm:p-7 flex flex-col justify-between overflow-hidden rounded-[2.5rem] relative group"
+        className="p-5 sm:p-6 flex flex-col justify-between overflow-hidden rounded-[2rem] relative"
         style={{
-          background: 'linear-gradient(165deg, rgba(255, 255, 255, 0.96) 0%, rgba(246, 252, 249, 0.94) 50%, rgba(235, 247, 241, 0.98) 100%)',
-          boxShadow: '0 28px 70px -15px rgba(6, 78, 59, 0.22), 0 0 0 1.5px rgba(255, 255, 255, 0.95), inset 0 2px 4px rgba(255, 255, 255, 0.98)',
+          background: 'linear-gradient(165deg, rgba(255, 255, 255, 0.97) 0%, rgba(246, 252, 249, 0.96) 50%, rgba(235, 247, 241, 0.99) 100%)',
+          boxShadow: '0 20px 60px -12px rgba(6, 78, 59, 0.2), 0 0 0 1.5px rgba(255, 255, 255, 0.95)',
           backdropFilter: 'blur(24px)',
         }}
       >
-        {/* Glowing Top Multi-Stop Gradient Accent */}
-        <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-emerald-500 via-teal-400 to-amber-500" />
+        {/* Glowing Top Gradient Accent */}
+        <div className="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-emerald-500 via-teal-400 to-amber-500 rounded-t-[2rem]" />
 
         {/* Center Interactive Map Component */}
-        <div className="relative w-full h-[520px] flex items-center justify-center p-1 my-auto">
+        <div className="relative w-full h-[420px] sm:h-[500px] flex items-center justify-center p-1 my-auto">
           <IndiaInteractiveMap onSelectState={setSelectedState} />
         </div>
 
@@ -115,17 +140,15 @@ function Map3DCard() {
         </div>
       </div>
 
-      {/* Floating 24/7 AI Autonomous Grid Badge */}
-      <motion.div
-        className="absolute -bottom-4 -left-4 z-30 rounded-2xl p-4 min-w-[220px]"
+      {/* Floating 24/7 Badge */}
+      <div
+        className="absolute -bottom-4 -left-4 z-30 rounded-2xl p-3.5 min-w-[200px]"
         style={{
           background: 'rgba(255, 255, 255, 0.97)',
           border: '1.5px solid rgba(16, 185, 129, 0.45)',
           boxShadow: '0 14px 34px rgba(6, 78, 59, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
           backdropFilter: 'blur(16px)',
         }}
-        animate={{ y: [0, -6, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
       >
         <div className="flex items-center gap-2 mb-0.5">
           <Activity className="h-4 w-4 text-emerald-600" />
@@ -136,12 +159,12 @@ function Map3DCard() {
         <div className="text-sm font-black text-slate-900">
           24/7 National Resilience Grid
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
 
-// ─── Portals List (Frosted Transparent & Modern Accents) ───────────
+// ─── Portals List ──────────────────────────────────────────────────────
 const portals = [
   {
     label: 'NGO Portal',
@@ -149,11 +172,12 @@ const portals = [
     badge: 'ACTIVE RELIEF',
     icon: HeartHandshake,
     to: '/ngo/dashboard',
-    accentColor: '#10B981',
-    badgeBg: 'rgba(16, 185, 129, 0.18)',
+    accentColor: '#059669',
+    badgeBg: 'rgba(16, 185, 129, 0.15)',
     badgeText: '#065F46',
-    hoverGlow: 'rgba(16, 185, 129, 0.35)',
+    hoverGlow: 'rgba(16, 185, 129, 0.25)',
     borderColor: 'rgba(16, 185, 129, 0.45)',
+    gradientHover: 'linear-gradient(135deg, rgba(209,250,229,0.95) 0%, rgba(255,255,255,0.98) 100%)',
   },
   {
     label: 'Gov Portal',
@@ -162,22 +186,24 @@ const portals = [
     icon: ShieldAlert,
     to: '/gov/dashboard',
     accentColor: '#2563EB',
-    badgeBg: 'rgba(37, 99, 235, 0.18)',
+    badgeBg: 'rgba(37, 99, 235, 0.15)',
     badgeText: '#1E3A8A',
-    hoverGlow: 'rgba(37, 99, 235, 0.35)',
+    hoverGlow: 'rgba(37, 99, 235, 0.25)',
     borderColor: 'rgba(59, 130, 246, 0.45)',
+    gradientHover: 'linear-gradient(135deg, rgba(219,234,254,0.95) 0%, rgba(255,255,255,0.98) 100%)',
   },
   {
     label: 'Donor / Volunteer',
     desc: 'Direct giving & field relief',
-    badge: 'ON-CHAIN & RELIEF',
+    badge: 'ON-CHAIN',
     icon: Zap,
     to: '/donor',
     accentColor: '#D97706',
-    badgeBg: 'rgba(217, 119, 6, 0.18)',
+    badgeBg: 'rgba(217, 119, 6, 0.15)',
     badgeText: '#78350F',
-    hoverGlow: 'rgba(245, 158, 11, 0.35)',
+    hoverGlow: 'rgba(245, 158, 11, 0.25)',
     borderColor: 'rgba(245, 158, 11, 0.45)',
+    gradientHover: 'linear-gradient(135deg, rgba(254,243,199,0.95) 0%, rgba(255,255,255,0.98) 100%)',
   },
 ];
 
@@ -206,14 +232,12 @@ export function HeroGeometric({
 
   return (
     <div
-      className="relative min-h-[95vh] md:min-h-screen w-full flex items-center overflow-hidden pt-20 pb-16"
+      className="relative min-h-[100svh] w-full flex items-center overflow-hidden pt-20 pb-16"
     >
-      {/* ─── VIDEO BACKGROUND (Ultra HD 4K Quality Hardware-Accelerated Playback) ─── */}
+      {/* ─── VIDEO BACKGROUND ─── */}
       <div
         className="absolute inset-0 overflow-hidden pointer-events-none select-none z-0"
-        style={{
-          transform: 'scale(1.03)',
-        }}
+        style={{ transform: 'scale(1.03)' }}
       >
         <video
           ref={videoRef}
@@ -229,7 +253,6 @@ export function HeroGeometric({
             backfaceVisibility: 'hidden',
             WebkitBackfaceVisibility: 'hidden',
             filter: 'contrast(1.14) brightness(1.04) saturate(1.22)',
-            imageRendering: 'high-quality',
           }}
         >
           <source
@@ -239,13 +262,12 @@ export function HeroGeometric({
         </video>
       </div>
 
-      {/* ─── Atmospheric haze (CSS animations only, no JS) ─── */}
+      {/* ─── Static Atmospheric Haze ─── */}
       <div className="absolute inset-0 pointer-events-none z-[1] overflow-hidden">
         {[
-          { w: 380, h: 260, l: '4%', t: '8%', col: 'rgba(255,255,255,0.1)', blur: 80, dur: 9 },
-          { w: 280, h: 200, l: '62%', t: '4%', col: 'rgba(255,255,255,0.08)', blur: 60, dur: 11 },
-          { w: 200, h: 170, l: '36%', t: '58%', col: 'rgba(16,185,129,0.09)', blur: 65, dur: 8 },
-          { w: 150, h: 130, l: '80%', t: '62%', col: 'rgba(16,185,129,0.12)', blur: 50, dur: 13 },
+          { w: 380, h: 260, l: '4%', t: '8%', col: 'rgba(255,255,255,0.08)', blur: 80 },
+          { w: 280, h: 200, l: '62%', t: '4%', col: 'rgba(255,255,255,0.06)', blur: 60 },
+          { w: 200, h: 170, l: '36%', t: '58%', col: 'rgba(16,185,129,0.07)', blur: 65 },
         ].map((m, i) => (
           <div
             key={i}
@@ -254,39 +276,34 @@ export function HeroGeometric({
               width: m.w, height: m.h, left: m.l, top: m.t,
               background: `radial-gradient(ellipse, ${m.col} 0%, transparent 70%)`,
               filter: `blur(${m.blur}px)`,
-              animation: `floatMote ${m.dur}s ease-in-out infinite alternate`,
-              animationDelay: `${i * 1.5}s`,
             }}
           />
         ))}
       </div>
 
-      {/* ─── Cinematic Colour Grading ─── */}
+      {/* ─── Cinematic Colour Grading (Soft Contrast Overlay) ─── */}
       <div className="absolute inset-0 z-[2] pointer-events-none">
         <div
           className="absolute inset-0"
           style={{
             background: `linear-gradient(180deg,
-              rgba(220, 240, 255, 0.18) 0%,
-              rgba(255, 255, 255, 0.05) 20%,
-              transparent 42%,
-              rgba(6, 40, 22, 0.22) 70%,
-              rgba(3, 24, 12, 0.78) 100%
+              rgba(255, 255, 255, 0.25) 0%,
+              rgba(255, 255, 255, 0.12) 25%,
+              transparent 50%,
+              rgba(6, 40, 22, 0.25) 75%,
+              rgba(3, 24, 12, 0.75) 100%
             )`,
           }}
         />
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 16% 26%, rgba(255, 248, 200, 0.35) 0%, transparent 52%)' }} />
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 84% 14%, rgba(180, 225, 255, 0.12) 0%, transparent 48%)' }} />
         <div className="absolute bottom-0 inset-x-0 h-44" style={{ background: 'linear-gradient(180deg, transparent 0%, rgba(2, 16, 8, 0.7) 100%)' }} />
-        <div className="absolute inset-0" style={{ background: 'radial-gradient(ellipse at 50% 50%, transparent 52%, rgba(0,0,0,0.32) 100%)' }} />
       </div>
 
       {/* ─── Foreground Hero Content ─── */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 w-full py-8 md:py-0">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-          {/* Left Column: Typography, Black Shining Header & Transparent Portals */}
-          <div className="lg:col-span-6 space-y-6 text-left">
+          {/* Left Column */}
+          <div className="lg:col-span-6 space-y-5 text-left">
 
             {/* Top Badges Row */}
             <motion.div
@@ -298,10 +315,10 @@ export function HeroGeometric({
               <div
                 className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider text-emerald-950"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.92)',
-                  backdropFilter: 'blur(12px)',
-                  border: '1px solid rgba(16, 185, 129, 0.5)',
-                  boxShadow: '0 4px 20px rgba(6, 78, 59, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.95)',
+                  background: 'rgba(255, 255, 255, 0.95)',
+                  backdropFilter: 'blur(16px)',
+                  border: '1.5px solid rgba(16, 185, 129, 0.5)',
+                  boxShadow: '0 6px 20px rgba(6, 78, 59, 0.16), inset 0 1px 0 rgba(255, 255, 255, 1)',
                 }}
               >
                 <Sparkles className="h-4 w-4 text-emerald-600 animate-spin" style={{ animationDuration: '6s' }} />
@@ -311,35 +328,34 @@ export function HeroGeometric({
               <LiveAlertTicker />
             </motion.div>
 
-            {/* ─── BRAND TITLE & MAIN HEADLINE (PURE BLACK SHINING AESTHETIC) ─── */}
+            {/* Headline - BOLD HIGH CONTRAST */}
             <div className="space-y-2">
               <div className="inline-block">
                 <SplitTextHeading
                   text="AapdaSetu"
-                  className="text-5xl sm:text-7xl font-black tracking-tight font-display"
+                  className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight font-display"
                   delay={0.1}
                   highlightWords={['Setu', 'AapdaSetu']}
-                  defaultColorClassName="bg-gradient-to-b from-black via-slate-900 to-black bg-clip-text text-transparent drop-shadow-[0_2px_14px_rgba(255,255,255,0.95)]"
-                  highlightClassName="bg-gradient-to-r from-black via-[#0F172A] to-black bg-clip-text text-transparent drop-shadow-[0_2px_14px_rgba(255,255,255,0.95)]"
+                  defaultColorClassName="bg-gradient-to-b from-slate-950 via-slate-900 to-black bg-clip-text text-transparent drop-shadow-[0_2px_16px_rgba(255,255,255,0.98)]"
+                  highlightClassName="bg-gradient-to-r from-black via-[#0F172A] to-black bg-clip-text text-transparent drop-shadow-[0_2px_16px_rgba(255,255,255,0.98)]"
                 />
               </div>
 
-              {/* Black Shining Headline */}
               <div className="pt-1">
                 <SplitTextHeading
                   text="Disaster Intelligence & Relief Ecosystem"
-                  className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight font-display"
-                  delay={0.2}
-                  highlightWords={['Intelligence', 'Relief', 'Disaster', 'Ecosystem']}
-                  defaultColorClassName="bg-gradient-to-br from-black via-slate-800 to-black bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.95)]"
-                  highlightClassName="bg-gradient-to-br from-black via-[#1E293B] to-black bg-clip-text text-transparent drop-shadow-[0_2px_10px_rgba(255,255,255,0.95)]"
+                  className="text-2xl sm:text-3xl md:text-4xl font-black leading-tight font-display"
+                  delay={0.25}
+                  highlightWords={['Intelligence', 'Relief', 'Ecosystem']}
+                  defaultColorClassName="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-800 bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(255,255,255,0.98)]"
+                  highlightClassName="bg-gradient-to-r from-emerald-800 via-teal-800 to-emerald-900 bg-clip-text text-transparent drop-shadow-[0_2px_12px_rgba(255,255,255,0.98)]"
                 />
               </div>
             </div>
 
-            {/* Crisp High-Contrast Subtitle Description */}
+            {/* Description - HIGH CONTRAST READABLE */}
             <motion.p
-              className="text-base sm:text-lg leading-relaxed font-bold text-slate-900 max-w-xl drop-shadow-[0_1px_4px_rgba(255,255,255,0.98)]"
+              className="text-sm sm:text-base leading-relaxed font-bold text-slate-900 max-w-lg drop-shadow-[0_1px_6px_rgba(255,255,255,0.98)]"
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
@@ -347,13 +363,8 @@ export function HeroGeometric({
               {description}
             </motion.p>
 
-            {/* ─── 3 PORTAL CONTAINERS (FROSTED GLASS TRANSPARENT / TRANSLUCENT AESTHETIC) ─── */}
-            <motion.div
-              className="grid grid-cols-1 sm:grid-cols-3 gap-3.5 pt-2"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.55 }}
-            >
+            {/* ─── 3 PREMIUM CRISP HIGH-CONTRAST PORTAL CARDS ─── */}
+            <div className="grid grid-cols-1 xs:grid-cols-3 sm:grid-cols-3 gap-3 pt-2 select-none w-full max-w-lg">
               {portals.map((portal, i) => {
                 const Icon = portal.icon;
                 return (
@@ -361,71 +372,66 @@ export function HeroGeometric({
                     key={portal.label}
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6 + i * 0.1, type: 'spring', stiffness: 200 }}
-                    whileHover={{ y: -6, scale: 1.03 }}
+                    whileHover={{ y: -3, scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className="group"
+                    transition={{ delay: 0.55 + i * 0.08, type: 'spring', stiffness: 300, damping: 20 }}
                   >
                     <Link
                       to={portal.to}
-                      className="flex flex-col justify-between p-4 sm:p-4.5 rounded-2xl transition-all h-full relative overflow-hidden backdrop-blur-2xl shadow-lg hover:shadow-2xl"
+                      className="portal-card group flex flex-col gap-2 p-3.5 sm:p-4 rounded-2xl w-full relative overflow-hidden transition-all duration-300"
                       style={{
-                        background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(245, 250, 248, 0.55) 100%)',
+                        background: 'rgba(255, 255, 255, 0.95)',
                         border: `1.5px solid ${portal.borderColor}`,
-                        boxShadow: `0 12px 30px -8px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.9)`,
-                      }}
+                        backdropFilter: 'blur(20px)',
+                        boxShadow: '0 8px 24px -4px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 1)',
+                        '--portal-hover-bg': portal.gradientHover,
+                        '--portal-accent': portal.accentColor,
+                      } as React.CSSProperties}
                     >
-                      {/* Top Row: Icon & Pill Badge */}
-                      <div className="flex items-center justify-between mb-2.5">
+                      {/* Icon + Badge row */}
+                      <div className="flex items-center justify-between relative z-10">
                         <div
-                          className="h-9 w-9 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110 shadow-xs border border-white/80"
-                          style={{
-                            background: portal.badgeBg,
-                          }}
+                          className="h-8 w-8 rounded-xl flex items-center justify-center shadow-xs group-hover:scale-110 transition-transform duration-300"
+                          style={{ background: portal.badgeBg, border: `1px solid ${portal.borderColor}` }}
                         >
-                          <Icon className="h-5 w-5" style={{ color: portal.accentColor }} />
+                          <Icon className="h-4.5 w-4.5" style={{ color: portal.accentColor }} />
                         </div>
                         <span
-                          className="text-[9px] font-mono font-black uppercase px-2 py-0.5 rounded-md border border-white/60 shadow-xs"
-                          style={{
-                            background: portal.badgeBg,
-                            color: portal.badgeText,
-                          }}
+                          className="text-[8px] font-mono font-black uppercase tracking-wider px-2 py-0.5 rounded-md"
+                          style={{ background: portal.badgeBg, color: portal.badgeText }}
                         >
                           {portal.badge}
                         </span>
                       </div>
-
-                      {/* Content & Arrow */}
-                      <div className="flex items-end justify-between">
-                        <div>
-                          <div className="text-base font-black leading-tight text-slate-900">
+                      {/* Label + Desc + Arrow */}
+                      <div className="flex items-end justify-between gap-1 mt-0.5 relative z-10">
+                        <div className="min-w-0">
+                          <div className="text-[13px] sm:text-sm font-black leading-tight truncate text-slate-900">
                             {portal.label}
                           </div>
-                          <div className="text-xs font-semibold text-slate-600 mt-0.5">
+                          <div className="text-[10px] font-semibold leading-tight truncate text-slate-500 mt-0.5">
                             {portal.desc}
                           </div>
                         </div>
-                        <div
-                          className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0 ml-1.5 group-hover:translate-x-1.5 transition-transform bg-white/80 shadow-xs border border-slate-200"
-                        >
-                          <ArrowRight className="h-3.5 w-3.5" style={{ color: portal.accentColor }} />
-                        </div>
+                        <ArrowRight
+                          className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover:translate-x-1"
+                          style={{ color: portal.accentColor }}
+                        />
                       </div>
                     </Link>
                   </motion.div>
                 );
               })}
-            </motion.div>
+            </div>
 
             {children}
 
           </div>
 
-          {/* Right Column: 3D High-Clarity Satellite Radar Map */}
+          {/* Right Column: Map */}
           <motion.div
-            className="lg:col-span-6 flex items-center justify-center relative z-10"
-            initial={{ opacity: 0, scale: 0.92 }}
+            className="lg:col-span-6 flex items-center justify-center relative z-10 mt-8 lg:mt-0"
+            initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >

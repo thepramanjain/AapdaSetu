@@ -24,12 +24,21 @@ import {
   Activity,
   CheckCircle2,
   Zap,
+  Radar,
+  Cpu,
+  ShieldCheck,
+  Boxes,
+  PackageCheck,
+  HeartPulse,
+  Crosshair,
+  Coins,
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export type DepthCarouselItem = {
   id?: string;
   avatar?: string;
+  roleIcon?: string;
   role?: string;
   title?: string;
   shortTitle?: string;
@@ -49,7 +58,7 @@ export interface DepthCarouselProps {
 const DEFAULT_ROLES: DepthCarouselItem[] = [
   {
     id: 'r1',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'drone',
     shortTitle: 'Field Scout',
     title: 'Emergency Field Scout',
     category: 'Rapid Telemetry',
@@ -59,7 +68,7 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
   },
   {
     id: 'r2',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'ai',
     shortTitle: 'Triage Lead',
     title: 'AI Incident Assessor',
     category: 'AI Vision & Triage',
@@ -69,7 +78,7 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
   },
   {
     id: 'r3',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'commander',
     shortTitle: 'Response Commander',
     title: 'Disaster Response Commander',
     category: 'NDRF Coordination',
@@ -79,7 +88,7 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
   },
   {
     id: 'r4',
-    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'blockchain',
     shortTitle: 'Treasury Auditor',
     title: 'On-Chain Treasury Auditor',
     category: 'Blockchain Ledger',
@@ -89,7 +98,7 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
   },
   {
     id: 'r5',
-    avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'relief',
     shortTitle: 'Relief Coordinator',
     title: 'Ground Relief Coordinator',
     category: 'Food & Medicine Supply',
@@ -99,7 +108,7 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
   },
   {
     id: 'r6',
-    avatar: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
+    roleIcon: 'medical',
     shortTitle: 'Medical Officer',
     title: 'Trauma & Medical Lead',
     category: 'Casualty Evacuation',
@@ -108,6 +117,129 @@ const DEFAULT_ROLES: DepthCarouselItem[] = [
     status: 'Priority',
   },
 ];
+
+// ─── High-Tech Role Logo Component ─────────────────────────────────────
+const RoleLogo: React.FC<{ item: DepthCarouselItem; size?: 'sm' | 'lg' }> = ({ item, size = 'lg' }) => {
+  const isLg = size === 'lg';
+
+  switch (item.roleIcon || item.id) {
+    case 'drone':
+    case 'r1':
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #064E3B 0%, #047857 50%, #059669 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#6EE7B7_1px,transparent_1px)] [background-size:8px_8px]" />
+          <div className="absolute inset-0 rounded-full border border-emerald-400/30 scale-75 animate-ping" style={{ animationDuration: '3s' }} />
+          <Radar className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-emerald-200 relative z-10 drop-shadow-[0_2px_8px_rgba(16,185,129,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-emerald-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            SCOUT-UAV
+          </span>
+        </div>
+      );
+
+    case 'ai':
+    case 'r2':
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #1E1B4B 0%, #3730A3 50%, #4F46E5 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-25 bg-[radial-gradient(#818CF8_1px,transparent_1px)] [background-size:8px_8px]" />
+          <Cpu className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-indigo-200 relative z-10 drop-shadow-[0_2px_8px_rgba(99,102,241,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-indigo-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            AI-NEURAL
+          </span>
+        </div>
+      );
+
+    case 'commander':
+    case 'r3':
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #78350F 0%, #B45309 50%, #D97706 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#FDE68A_1px,transparent_1px)] [background-size:8px_8px]" />
+          <ShieldCheck className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-amber-200 relative z-10 drop-shadow-[0_2px_8px_rgba(245,158,11,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-amber-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            NDRF-CMD
+          </span>
+        </div>
+      );
+
+    case 'blockchain':
+    case 'r4':
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #4C1D95 0%, #6D28D9 50%, #7C3AED 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#DDD6FE_1px,transparent_1px)] [background-size:8px_8px]" />
+          <Boxes className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-purple-200 relative z-10 drop-shadow-[0_2px_8px_rgba(168,85,247,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-purple-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            POLYGON
+          </span>
+        </div>
+      );
+
+    case 'relief':
+    case 'r5':
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #115E59 0%, #0D9488 50%, #14B8A6 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#99F6E4_1px,transparent_1px)] [background-size:8px_8px]" />
+          <PackageCheck className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-teal-200 relative z-10 drop-shadow-[0_2px_8px_rgba(20,184,166,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-teal-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            RELIEF-AIR
+          </span>
+        </div>
+      );
+
+    case 'medical':
+    case 'r6':
+    default:
+      return (
+        <div
+          className={`w-full h-full flex flex-col items-center justify-center relative overflow-hidden text-white ${
+            isLg ? 'p-3' : 'p-2'
+          }`}
+          style={{
+            background: 'linear-gradient(135deg, #881337 0%, #BE123C 50%, #E11D48 100%)',
+          }}
+        >
+          <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#FECDD3_1px,transparent_1px)] [background-size:8px_8px]" />
+          <HeartPulse className={`${isLg ? 'h-9 w-9' : 'h-7 w-7'} text-rose-200 relative z-10 drop-shadow-[0_2px_8px_rgba(244,63,94,0.8)]`} />
+          <span className={`font-mono font-black uppercase tracking-wider text-rose-100 ${isLg ? 'text-[9px] mt-1' : 'text-[7px]'}`}>
+            TRAUMA-ICU
+          </span>
+        </div>
+      );
+  }
+};
 
 const clamp = (v: number, min: number, max: number) => Math.min(Math.max(v, min), max);
 
@@ -333,18 +465,18 @@ export const DepthCarousel: React.FC<DepthCarouselProps> = ({
                 }}
               >
                 {isCenter ? (
-                  /* ─── ACTIVE CENTER CARD (Exact white elevated style from Screenshot 1) ─── */
+                  /* ─── ACTIVE CENTER CARD (Elevated with soft gradient & Role Logo) ─── */
                   <div
-                    className="w-full bg-white rounded-[32px] p-6 sm:p-7 text-center shadow-[0_24px_50px_rgba(0,0,0,0.22)] border border-white flex flex-col items-center justify-between min-h-[320px] transition-all"
+                    className="w-full rounded-[32px] p-6 sm:p-7 text-center shadow-[0_24px_50px_rgba(0,0,0,0.22)] border border-white/90 flex flex-col items-center justify-between min-h-[330px] transition-all"
+                    style={{
+                      background: 'linear-gradient(165deg, #FFFFFF 0%, #F8FAFC 55%, #F1F5F9 100%)',
+                      boxShadow: '0 24px 50px -10px rgba(6, 78, 59, 0.25), 0 0 0 1.5px rgba(255, 255, 255, 0.95), inset 0 2px 4px rgba(255, 255, 255, 0.95)',
+                    }}
                   >
-                    {/* Avatar Container with Green Online Dot */}
+                    {/* Logo Container with Green Online Dot */}
                     <div className="relative mb-3">
-                      <div className="w-20 h-20 sm:w-22 sm:h-22 rounded-2xl overflow-hidden bg-slate-900 shadow-md border-2 border-slate-100 flex items-center justify-center">
-                        <img
-                          src={item.avatar}
-                          alt={item.title}
-                          className="w-full h-full object-cover"
-                        />
+                      <div className="w-20 h-20 sm:w-22 sm:h-22 rounded-2xl overflow-hidden shadow-lg border-2 border-white flex items-center justify-center">
+                        <RoleLogo item={item} size="lg" />
                       </div>
                       {/* Green Online Dot Badge */}
                       <span className="absolute -bottom-1 -right-1 h-5 w-5 rounded-full bg-emerald-500 border-2 border-white flex items-center justify-center shadow-xs">
@@ -362,7 +494,7 @@ export const DepthCarousel: React.FC<DepthCarouselProps> = ({
                       {item.description}
                     </p>
 
-                    {/* Hashtag Badges Matching Screenshot 1 */}
+                    {/* Hashtag Badges */}
                     <div className="flex flex-wrap items-center justify-center gap-2">
                       {item.tags?.map((tag, tIdx) => (
                         <span
@@ -375,20 +507,17 @@ export const DepthCarousel: React.FC<DepthCarouselProps> = ({
                     </div>
                   </div>
                 ) : (
-                  /* ─── FLANKING SIDE CARDS (Translucent Frosted Look from Screenshot 1) ─── */
+                  /* ─── FLANKING SIDE CARDS (Translucent Gradient Frosted Look) ─── */
                   <div
-                    className="w-full rounded-[26px] p-5 text-center flex flex-col items-center justify-center min-h-[220px] backdrop-blur-md border border-white/40 shadow-lg transition-all"
+                    className="w-full rounded-[26px] p-5 text-center flex flex-col items-center justify-center min-h-[220px] backdrop-blur-md border border-white/50 shadow-lg transition-all"
                     style={{
-                      background: 'rgba(255, 255, 255, 0.32)',
+                      background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.45) 0%, rgba(240, 253, 250, 0.28) 100%)',
+                      boxShadow: '0 12px 30px -8px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.6)',
                     }}
                   >
-                    {/* Avatar */}
-                    <div className="w-16 h-16 rounded-2xl overflow-hidden bg-slate-800/80 shadow-sm border border-white/50 mb-3">
-                      <img
-                        src={item.avatar}
-                        alt={item.shortTitle || item.title}
-                        className="w-full h-full object-cover"
-                      />
+                    {/* Role Logo */}
+                    <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-md border border-white/60 mb-3 flex items-center justify-center">
+                      <RoleLogo item={item} size="sm" />
                     </div>
                     {/* Short Title */}
                     <h4 className="font-display font-bold text-sm sm:text-base text-slate-900 tracking-tight">

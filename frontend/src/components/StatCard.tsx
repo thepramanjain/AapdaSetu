@@ -71,7 +71,7 @@ export const StatCard: React.FC<StatCardProps> = ({
       initial={{ opacity: 0, y: 12 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className="bg-white rounded-xl p-5 border border-slate-200 shadow-card hover:shadow-card-hover transition-shadow relative overflow-hidden"
+      className="bg-gradient-to-br from-white via-slate-50/80 to-slate-100/60 rounded-2xl p-5 border border-slate-200/90 shadow-[0_8px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_40px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-all relative overflow-hidden backdrop-blur-sm"
     >
       <div className={`absolute -top-6 -right-6 h-24 w-24 rounded-full blur-2xl opacity-10 bg-current ${accent}`} />
       <div className="flex items-center gap-2 text-xs uppercase tracking-wider text-slate-500 font-medium">

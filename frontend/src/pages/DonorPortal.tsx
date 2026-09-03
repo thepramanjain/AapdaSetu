@@ -18,7 +18,6 @@ import {
   Building
 } from 'lucide-react';
 import { useStore } from '../hooks/useStore';
-import ThreeBackground from '../components/ThreeBackground';
 
 export const DonorPortal: React.FC = () => {
   const disasters = useStore((state) => state.disasters);
@@ -71,15 +70,7 @@ export const DonorPortal: React.FC = () => {
         `,
       }}
     >
-      {/* ─── SUBTLE 3D AMBIENT NODES (Lightweight Amber Particles) ─── */}
-      <ThreeBackground
-        theme="amber"
-        particleCount={28}
-        opacity={0.42}
-        interactive={true}
-      />
-
-      {/* ─── LIGHTWEIGHT AMBIENT SOFT HAZE ─── */}
+      {/* ─── CLEAN AMBIENT SOFT HAZE (No 3D Meshes) ─── */}
       <div
         className="absolute inset-0 opacity-20 pointer-events-none z-0"
         style={{
@@ -183,15 +174,10 @@ export const DonorPortal: React.FC = () => {
         </motion.div>
       </section>
 
-      {/* ─── MIDDLE DEPTH NEUMORPHIC NAVBAR STRIP ─── */}
+      {/* ─── MIDDLE MODERN SEGMENTED NAVBAR STRIP ─── */}
       <div className="mx-auto max-w-7xl mb-12 flex items-center justify-center">
         <div
-          className="inline-flex p-2 rounded-2xl gap-2 sm:gap-3 max-w-full overflow-x-auto select-none"
-          style={{
-            backgroundColor: '#E4E9F2',
-            boxShadow: 'inset 4px 4px 10px #b8c4d9, inset -4px -4px 10px #ffffff',
-            border: '1px solid rgba(255, 255, 255, 0.7)',
-          }}
+          className="inline-flex p-1.5 rounded-2xl gap-1.5 max-w-full overflow-x-auto select-none bg-white border border-slate-200/90 shadow-xs"
         >
           {[
             { id: 'donate', label: 'Contribute Relief Funds', icon: Heart },
@@ -206,20 +192,13 @@ export const DonorPortal: React.FC = () => {
                 key={tab.id}
                 type="button"
                 onClick={() => setDonorTab(tab.id as any)}
-                className={`flex items-center gap-2.5 px-5 py-3 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap cursor-pointer ${
+                className={`flex items-center gap-2 px-4.5 py-2.5 rounded-xl text-xs sm:text-[13px] font-bold transition-all whitespace-nowrap cursor-pointer ${
                   isActive
-                    ? 'text-amber-950 bg-white shadow-lg font-black scale-102'
-                    : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+                    ? 'text-white bg-gradient-to-r from-amber-500 to-amber-600 shadow-sm font-bold'
+                    : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100/70'
                 }`}
-                style={
-                  isActive
-                    ? {
-                        boxShadow: '6px 6px 14px #b8c4d9, -6px -6px 14px #ffffff',
-                      }
-                    : {}
-                }
               >
-                <Icon className={`h-4.5 w-4.5 ${isActive ? 'text-amber-600' : 'text-slate-500'}`} />
+                <Icon className={`h-4 w-4 ${isActive ? 'text-white' : 'text-slate-500'}`} />
                 <span>{tab.label}</span>
               </button>
             );
