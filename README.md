@@ -7,7 +7,7 @@
 [![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-orange)](https://langchain-ai.github.io/langgraph/)
-[![Gemini](https://img.shields.io/badge/LLM-Gemini%20%7C%20Groq-purple?logo=google)](https://ai.google.dev/)
+[![Gemini](https://img.shields.io/badge/LLM-Gemini%20%7C%20OpenRouter-purple?logo=google)](https://openrouter.ai/)
 [![Web3](https://img.shields.io/badge/Blockchain-Web3.py%20%7C%20Sepolia-blueviolet?logo=ethereum)](https://web3py.readthedocs.io/)
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)](LICENSE)
 
@@ -190,7 +190,7 @@ P-4/
 │   ├── blockchain_service.py     # Web3.py bridge; LIVE-only gate; mock mode fallback
 │   ├── budget_service.py         # Heuristic funding estimation
 │   ├── context_optimizer.py      # Token-budget state compression
-│   ├── llm_manager.py            # Gemini + Groq LLM routing with fallback
+│   ├── llm_manager.py            # Gemini + OpenRouter LLM routing with fallback
 │   ├── logging_service.py        # Centralised timestamped execution logger
 │   ├── optimization.py           # StateSanitizer, ResponseFormatter, PromptCompressor
 │   ├── reports_service.py        # Generates Gov / NGO / Public stakeholder reports
@@ -237,7 +237,7 @@ P-4/
 | API | Purpose | Free Tier |
 |---|---|---|
 | [Google Gemini](https://ai.google.dev/) | Primary LLM (analysis, enrichment, JSON generation) | ✅ Yes |
-| [Groq](https://console.groq.com/) | Fallback LLM (LLaMA-3 70B) | ✅ Yes |
+| [OpenRouter](https://openrouter.ai/) | Fallback LLM (LLaMA-3.3 70B) | ✅ Yes |
 | [Open-Meteo](https://open-meteo.com/) | Weather forecast (rainfall, wind) | ✅ Yes, no key |
 | [GloFAS](https://global-flood-awareness-system.eu/) | River discharge forecast | ✅ Yes, no key |
 | [USGS Earthquake Catalog](https://earthquake.usgs.gov/) | Seismic event data | ✅ Yes, no key |
@@ -247,7 +247,7 @@ P-4/
 | [ReliefWeb](https://reliefweb.int/api/) | Live humanitarian disaster reports | ✅ Yes, no key |
 | [Alchemy / Infura](https://www.alchemy.com/) | Ethereum RPC (Sepolia testnet) | ✅ Free tier |
 
-> **All APIs except Gemini/Groq/Alchemy require no API key.** The system functions in full mock mode if blockchain credentials are absent.
+> **All APIs except Gemini/OpenRouter/Alchemy require no API key.** The system functions in full mock mode if blockchain credentials are absent.
 
 ---
 
@@ -256,8 +256,8 @@ P-4/
 | Layer | Technology |
 |---|---|
 | **Agent Orchestration** | LangGraph (stateful multi-agent graph) |
-| **Primary LLM** | Google Gemini 1.5 Flash / Pro |
-| **Fallback LLM** | Groq (LLaMA-3 70B Versatile) |
+| **Primary LLM** | Google Gemini 3.6 Flash |
+| **Fallback LLM** | OpenRouter (meta-llama/llama-3.3-70b-instruct:free) |
 | **Embeddings** | `BAAI/bge-small-en-v1.5` (SentenceTransformers) |
 | **Vector Store** | ChromaDB (native) with pure-Python fallback |
 | **Web Framework** | FastAPI + Uvicorn |
@@ -323,8 +323,8 @@ PORT=8000
 LOG_LEVEL=INFO
 
 # === Optional: Fallback LLM ===
-GROQ_API_KEY=your_groq_api_key_here
-GROQ_MODEL=llama-3.3-70b-versatile
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+OPENROUTER_MODEL=meta-llama/llama-3.3-70b-instruct:free
 
 # === Optional: Blockchain (leave blank for mock mode) ===
 WEB3_PROVIDER_URI=https://eth-sepolia.g.alchemy.com/v2/your_alchemy_key
