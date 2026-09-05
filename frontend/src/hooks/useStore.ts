@@ -72,8 +72,14 @@ export interface RegisteredUser {
   email: string;
   role: 'government' | 'ngo';
   agencyName: string;
-  state: string;
-  walletAddress: string;
+  state?: string;
+  walletAddress?: string;
+  avatarUrl?: string;
+  picture?: string;
+  googleId?: string;
+  id?: string;
+  name?: string;
+  agency?: string;
 }
 
 export interface StoreState {

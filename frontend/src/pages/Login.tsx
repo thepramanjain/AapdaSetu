@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useGoogleLogin } from '@react-oauth/google';
 import { useStore } from '../hooks/useStore';
 import { motion, AnimatePresence, useMotionValue, useSpring } from 'framer-motion';
 import { Sparkles, ShieldCheck, ArrowRight, Lock, CheckCircle2 } from 'lucide-react';
@@ -20,11 +21,70 @@ export const Login: React.FC = () => {
   const [fullName, setFullName] = useState('');
   const [agencyName, setAgencyName] = useState('');
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
   const [isPasswordFocused, setIsPasswordFocused] = useState(false);
   const [isEmailFocused, setIsEmailFocused] = useState(false);
   const [isNameFocused, setIsNameFocused] = useState(false);
+
+  // Real Google OAuth Handler
+  const handleGoogleLogin = useGoogleLogin({
+    onSuccess: async (tokenResponse) => {
+      setGoogleLoading(true);
+      setError('');
+      setSuccess('');
+      try {
+        const userInfoRes = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+          headers: {
+            Authorization: `Bearer ${tokenResponse.access_token}`,
+          },
+        });
+
+        if (!userInfoRes.ok) {
+          throw new Error('Failed to retrieve user profile from Google.');
+        }
+
+        const profile = await userInfoRes.json();
+        const userName = profile.name || profile.given_name || profile.email?.split('@')[0] || 'Google User';
+        const userEmail = profile.email || 'user@gmail.com';
+        const userPicture = profile.picture;
+
+        // Register / Save authenticated Google user into persistent store
+        registerUser({
+          id: profile.sub || `google-${Date.now()}`,
+          fullName: userName,
+          name: userName,
+          email: userEmail,
+          role: role,
+          agencyName: role === 'government' ? 'National Disaster Management Cell' : 'Registered NGO Relief Network',
+          agency: role === 'government' ? 'NDMA Coordinator' : 'Relief Coordinator',
+          state: 'Assam',
+          walletAddress: `0x${Array.from({ length: 40 }, () => Math.floor(Math.random() * 16).toString(16)).join('')}`,
+          avatarUrl: userPicture,
+          picture: userPicture,
+          googleId: profile.sub,
+        });
+
+        setRole(role);
+        setSuccess(`Signed in as ${userName}! Redirecting to ${role === 'ngo' ? 'NGO' : 'Gov'} portal...`);
+
+        setTimeout(() => {
+          setGoogleLoading(false);
+          navigate(role === 'ngo' ? '/ngo/dashboard' : '/gov/dashboard');
+        }, 900);
+      } catch (err: any) {
+        console.error('Google profile error:', err);
+        setError(err.message || 'Google authentication failed.');
+        setGoogleLoading(false);
+      }
+    },
+    onError: (errorResponse) => {
+      console.error('Google Sign-In Error:', errorResponse);
+      setError('Google Sign-In was cancelled or could not be completed.');
+      setGoogleLoading(false);
+    },
+  });
 
   // 3D Parallax Tilt Effect
   const mouseX = useMotionValue(0);
@@ -398,12 +458,24 @@ export const Login: React.FC = () => {
 
                 <motion.button
                   type="button"
+                  onClick={() => {
+                    setError('');
+                    setSuccess('');
+                    handleGoogleLogin();
+                  }}
+                  disabled={googleLoading || loading}
                   whileHover={{ scale: 1.01, y: -1 }}
                   whileTap={{ scale: 0.98 }}
-                  className="w-full border border-slate-200 bg-white/90 hover:bg-white text-slate-700 font-bold text-xs rounded-xl py-3 flex items-center justify-center gap-2.5 transition shadow-xs"
+                  className={`w-full border border-slate-200 bg-white/95 hover:bg-white text-slate-700 font-bold text-xs rounded-xl py-3 flex items-center justify-center gap-2.5 transition shadow-xs cursor-pointer ${
+                    googleLoading ? 'opacity-70 cursor-wait' : ''
+                  }`}
                 >
-                  <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="h-4 w-4" alt="Google" />
-                  <span>Continue with Google</span>
+                  {googleLoading ? (
+                    <div className="w-4 h-4 border-2 border-emerald-600 border-t-transparent rounded-full animate-spin" />
+                  ) : (
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" className="h-4 w-4" alt="Google" />
+                  )}
+                  <span>{googleLoading ? 'Signing in with Google...' : 'Continue with Google'}</span>
                 </motion.button>
 
                 {/* Footer Switch */}
