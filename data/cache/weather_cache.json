@@ -1,23 +1,23 @@
 {
   "status": "success",
-  "temperature_c": 19.7,
-  "precipitation_mm": 0.0,
-  "humidity_pct": 85,
-  "wind_speed_kmh": 3.1,
+  "temperature_c": 25.9,
+  "precipitation_mm": 0.5,
+  "humidity_pct": 97,
+  "wind_speed_kmh": 2.7,
   "source": "open_meteo_api",
   "flood": {
     "status": "success",
     "river_discharge_m3s": [
-      345.74,
-      323.34,
-      304.49,
-      294.12,
-      288.07
+      13.55,
+      13.59,
+      15.33,
+      16.95,
+      15.71
     ],
-    "max_discharge_m3s": 345.74,
-    "average_discharge_m3s": 311.15,
-    "flood_probability": 0.58,
-    "flood_severity_score": 5.5,
+    "max_discharge_m3s": 16.95,
+    "average_discharge_m3s": 15.03,
+    "flood_probability": 0.1,
+    "flood_severity_score": 0.0,
     "source": "glofas_flood_api"
   }
 }

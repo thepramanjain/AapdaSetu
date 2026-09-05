@@ -25,10 +25,13 @@ class Settings(BaseSettings):
     HOST: str = Field(default="127.0.0.1", description="FastAPI host binding address")
     PORT: int = Field(default=8000, description="FastAPI port binding number")
     
-    # Gemini API Credentials
+    # Gemini API Credentials (Primary)
     GEMINI_API_KEY: str = Field(default="mock_api_key_value_for_testing", description="API Key for Google Gemini")
-    GROQ_API_KEY: str = Field(default="", description="API Key for Groq fallback LLM")
-    GROQ_MODEL: str = Field(default="llama-3.3-70b-versatile", description="Default Groq model name")
+    GEMINI_MODEL: str = Field(default="gemini-3.6-flash", description="Default Gemini model name")
+    
+    # OpenRouter API Credentials (Fallback)
+    OPENROUTER_API_KEY: str = Field(default="", description="API Key for OpenRouter fallback LLM")
+    OPENROUTER_MODEL: str = Field(default="meta-llama/llama-3.3-70b-instruct:free", description="Default OpenRouter model name")
     
     # Paths config
     DATA_DIR: str = Field(default=os.path.join(BASE_DIR, "data"), description="Central data directory")
@@ -48,8 +51,7 @@ class Settings(BaseSettings):
     BLOCK_EXPLORER_TX_URL: str = Field(default="https://sepolia.etherscan.io/tx/", description="Base explorer URL for transaction links")
 
     # LLM parameters
-    PRIMARY_LLM: str = "llama-3.3-70b-versatile"
-    GEMINI_MODEL: str = "gemini-2.5-flash"
+    PRIMARY_LLM: str = "gemini-3.6-flash"
     EMBEDDING_PROVIDER: str = Field(default="gemini", description="Embedding provider (gemini, huggingface)")
     EMBEDDING_MODEL: str = "models/gemini-embedding-001"  # Google Gemini Embedding model
     

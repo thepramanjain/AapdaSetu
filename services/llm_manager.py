@@ -1,9 +1,9 @@
 """Central LLM manager providing a unified `invoke()` interface.
 
 Behavior:
-- Primary: Groq client
-- Fallback: Google Gemini via LangChain wrapper if Groq fails
-- Retry Gemini once on transient errors
+- Primary: Google Gemini via LangChain wrapper
+- Fallback: OpenRouter if Gemini fails
+- Retry OpenRouter once on transient errors
 - On total failure, raises `LLMServiceError` for callers to handle.
 """
 from typing import Any, List, Union
@@ -51,8 +51,8 @@ def parse_strict_json(text: str) -> dict:
 
 class LLMManager:
     def __init__(self):
-        self.primary_name = "groq"
-        self.fallback_name = "gemini"
+        self.primary_name = "gemini"
+        self.fallback_name = "openrouter"
         self.estimator = PromptTokenEstimator()
         self.compressor = PromptCompressor(self.estimator)
 
@@ -70,17 +70,7 @@ class LLMManager:
         else:
             compressed_tokens = estimated_tokens
 
-        # Try Groq first
-        groq_model = getattr(settings, 'GROQ_MODEL', 'default')
-        app_logger.info(f"[LLM Routing] Provider: GROQ | Model: {groq_model}")
-        self.estimator.log_estimation(estimated_tokens, compressed_tokens, groq_model, "GROQ")
-        
-        try:
-            return self._invoke_groq(prompt_text, temperature=temperature, require_json=require_json, **kwargs)
-        except Exception as e:
-            app_logger.warning(f"[LLM Fallback] Groq invocation failed: {e}. Switching to GEMINI.")
-
-        # Try Gemini fallback (with one retry)
+        # Try Gemini first
         gemini_model = getattr(settings, 'GEMINI_MODEL', 'default')
         app_logger.info(f"[LLM Routing] Provider: GEMINI | Model: {gemini_model}")
         self.estimator.log_estimation(estimated_tokens, compressed_tokens, gemini_model, "GEMINI")
@@ -88,12 +78,22 @@ class LLMManager:
         try:
             return self._invoke_gemini(prompt_text, temperature=temperature, require_json=require_json, **kwargs)
         except Exception as e:
-            app_logger.warning(f"[LLM Fallback] Gemini failed: {e}. Retrying once...")
+            app_logger.warning(f"[LLM Fallback] Gemini invocation failed: {e}. Switching to OPENROUTER.")
+
+        # Try OpenRouter fallback (with one retry)
+        openrouter_model = getattr(settings, 'OPENROUTER_MODEL', 'default')
+        app_logger.info(f"[LLM Routing] Provider: OPENROUTER | Model: {openrouter_model}")
+        self.estimator.log_estimation(estimated_tokens, compressed_tokens, openrouter_model, "OPENROUTER")
+        
+        try:
+            return self._invoke_openrouter(prompt_text, temperature=temperature, require_json=require_json, **kwargs)
+        except Exception as e:
+            app_logger.warning(f"[LLM Fallback] OpenRouter failed: {e}. Retrying once...")
             try:
                 time.sleep(0.5)
-                return self._invoke_gemini(prompt_text, temperature=temperature, require_json=require_json, **kwargs)
+                return self._invoke_openrouter(prompt_text, temperature=temperature, require_json=require_json, **kwargs)
             except Exception as e2:
-                app_logger.error("[LLM Fatal] Both Groq and Gemini failed.", exc_info=True)
+                app_logger.error("[LLM Fatal] Both Gemini and OpenRouter failed.", exc_info=True)
                 raise LLMServiceError("LLM failure: Both providers failed") from e2
 
     def _invoke_gemini(self, prompt: str, **kwargs) -> str:
@@ -134,33 +134,44 @@ class LLMManager:
             app_logger.warning(f"Gemini call failed: {e}")
             raise
 
-    def _invoke_groq(self, prompt: str, **kwargs) -> str:
+    def _invoke_openrouter(self, prompt: str, **kwargs) -> str:
         try:
-            # Import Groq client dynamically; add groq SDK to requirements.txt
-            from groq import Groq
-            client = Groq(api_key=settings.GROQ_API_KEY)
-            model = getattr(settings, "GROQ_MODEL", None) or kwargs.get("model")
+            import httpx
+            model = getattr(settings, "OPENROUTER_MODEL", None) or kwargs.get("model")
             if not model:
-                raise RuntimeError("No GROQ_MODEL configured for Groq fallback")
-
-            req_kwargs = {
-                "messages": [{"role": "user", "content": prompt}],
+                raise RuntimeError("No OPENROUTER_MODEL configured for OpenRouter fallback")
+            
+            headers = {
+                "Authorization": f"Bearer {settings.OPENROUTER_API_KEY}",
+                "HTTP-Referer": "http://localhost:8000", # Required by OpenRouter
+                "X-Title": "AapdaSetu", # Optional title
+            }
+            
+            payload = {
                 "model": model,
+                "messages": [{"role": "user", "content": prompt}],
                 "temperature": kwargs.get("temperature", 0.3),
                 "max_tokens": kwargs.get("max_tokens", 1024)
             }
-            if kwargs.get("require_json", False):
-                req_kwargs["response_format"] = {"type": "json_object"}
-
-            # Standard chat completion invocation using modern Groq SDK
-            chat_completion = client.chat.completions.create(**req_kwargs)
             
-            if not chat_completion.choices or not chat_completion.choices[0].message.content:
-                raise RuntimeError("Groq client returned an empty response")
+            if kwargs.get("require_json", False):
+                payload["response_format"] = {"type": "json_object"}
                 
-            return chat_completion.choices[0].message.content.strip()
+            response = httpx.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers=headers,
+                json=payload,
+                timeout=30.0
+            )
+            response.raise_for_status()
+            
+            data = response.json()
+            if not data.get("choices") or not data["choices"][0].get("message", {}).get("content"):
+                raise RuntimeError("OpenRouter returned an empty response")
+                
+            return data["choices"][0]["message"]["content"].strip()
         except Exception as e:
-            app_logger.error(f"Groq call failed: {e}")
+            app_logger.error(f"OpenRouter call failed: {e}")
             raise
 
 
