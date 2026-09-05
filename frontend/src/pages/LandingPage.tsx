@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useStore } from '../hooks/useStore';
 import { DisasterMap } from '../components/DisasterMap';
@@ -64,6 +64,7 @@ export const LandingPage: React.FC = () => {
     return (skip === 'true' || seen === 'true');
   });
 
+  const mapWrapperRef = useRef<HTMLDivElement>(null);
   const disasters = useStore((state) => state.disasters);
   const fundRequests = useStore((state) => state.fundRequests);
   const blockchainTxs = useStore((state) => state.blockchainTxs);
@@ -719,6 +720,15 @@ export const LandingPage: React.FC = () => {
               </h3>
             </div>
             <button
+              onClick={() => {
+                if (mapWrapperRef.current) {
+                  if (!document.fullscreenElement) {
+                    mapWrapperRef.current.requestFullscreen().catch(() => {});
+                  } else {
+                    document.exitFullscreen().catch(() => {});
+                  }
+                }
+              }}
               className="flex items-center gap-1.5 text-xs font-mono font-bold px-3.5 py-1.5 rounded-xl text-slate-700 hover:text-emerald-800 transition-colors cursor-pointer"
               style={{
                 backgroundColor: '#E4E9F2',
@@ -731,6 +741,7 @@ export const LandingPage: React.FC = () => {
           </div>
 
           <div
+            ref={mapWrapperRef}
             className="relative rounded-2xl overflow-hidden h-[520px]"
             style={{
               boxShadow: '0 0 0 2px rgba(15,23,42,0.25), 0 8px 32px rgba(0,0,0,0.2)',
